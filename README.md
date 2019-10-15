@@ -13,7 +13,7 @@ Figure 1: Geological properties data model</p>
 
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We underake a survey
-on the feature, either as a whole feature, or on subsets of the feature. The survey yields samples. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to determine the geological properties of the feature.
+on the feature, either as a whole feature, or on subsets of the feature. The survey yields samples. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to understand the geological properties of the feature.
 
 ### Definitions
 #### Geological property
