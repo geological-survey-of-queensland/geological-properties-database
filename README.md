@@ -1,4 +1,4 @@
-# Sites, samples, observations &amp; results database (Geological properties database)
+# Sites, samples, observations &amp; results database (Geological Properties Database)
 
 One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve understanding of Queensland's resource potential.
 
@@ -44,3 +44,97 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 #### Result
 * The result of the observation stored as a value together with the unit.  
 * Examples: concentrations, quality, reserve size
+
+## The Geological Properties Database
+The Geological Survey of Queensland is creating a new Geological Properties database to:  
+* Replace the existing Surface Geology functionality in the MERLIN system.  
+* Replace the Cores and Cuttings functionality in MERLIN.  
+* Replace the Mineral Occurrences functionality in MERLIN.  
+* Replace the Aerial Geophysics functionality in GEM.
+* Capture the primary Geochemical data recorded in the Explorer3 system.  
+* Provide a repository for new data created by the department.  
+* Provide a repository for new data submitted to the department.  
+
+### Objectives of the Geological Properties Database
+TO DO
+
+## Geological Properties Database conceptual data model
+TO DO  
+
+## Geological Properties Database data elements
+| Data Concept | MERLIN table | Comments |
+|---|---|---|
+|Geological Property|--|--|
+|Geoadmin Feature|--|--|
+|Site|--|--|
+|Survey|--|--|
+|Sample|--|--|
+|Observation|--|--|
+|Result|--|--|  
+
+## Geological Properties Database vocabularies
+| Vocabulary | Example values |
+|---|---|
+|Geoadmin features|--|
+|Site types|--|
+|Survey types|--|
+|Sample types|--|
+|Observation types|--|
+
+* Geoadmin features  
+* Site types  
+* Survey types
+
+## Mapping to MERLIN tables
+| Data Concept | MERLIN table | Comments |
+|---|---|---|
+|Geological Property|--|--|
+|Geoadmin Feature|--|--|
+|Site|--|--|
+|Survey|--|--|
+|Sample|--|--|
+|Observation|--|--|
+|Result|--|--|
+
+
+## Mapping to GEM tables
+| Data Concept | GEM table | Comments |
+|---|---|---|
+|Geological Property|--|--|
+|Geoadmin Feature|--|--|
+|Site|--|--|
+|Survey|--|--|
+|Sample|--|--|
+|Observation|--|--|
+|Result|--|--|
+
+## Mapping to Explorer3 tables
+| Data Concept | Explorer3 table | Comments |
+|---|---|---|
+|Geological Property|--|--|
+|Geoadmin Feature|--|--|
+|Site|--|--|
+|Survey|--|--|
+|Sample|--|--|
+|Observation|--|--|
+|Result|--|--|
+
+## See also
+
+
+## Licence
+This code repository's content are licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), the deed of which is stored in this repository here: [LICENSE](LICENSE).
+
+## Contacts
+*System owner*:  
+**Mark Gordon**  
+Geological Survey of Quensland  
+Department of Natural Resources, Mines and Energy  
+Brisbane, QLD, Australia  
+<mark.gordon@dnrme.qld.gov.au>  
+
+*Author*:  
+**David Crosswell**  
+Enterprise Architect  
+Cross-Lateral Enterprises   
+<https://crosslateral.com.au>  
