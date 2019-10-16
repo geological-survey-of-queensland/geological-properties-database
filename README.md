@@ -46,7 +46,9 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * Examples: concentrations, quality, reserve size
 
 ## The Geological Properties Database
-The Geological Survey of Queensland is creating a new Geological Properties database to:  
+The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
+
+### Objectives of the Geological Properties Database
 * Replace the existing Surface Geology functionality in the MERLIN system.  
 * Replace the Cores and Cuttings functionality in MERLIN.  
 * Replace the Mineral Occurrences functionality in MERLIN.  
@@ -54,9 +56,6 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 * Capture the primary Geochemical data recorded in the Explorer3 system.  
 * Provide a repository for new data created by the department.  
 * Provide a repository for new data submitted to the department.  
-
-### Objectives of the Geological Properties Database
-TO DO
 
 ## Geological Properties Database conceptual data model
 TO DO  
