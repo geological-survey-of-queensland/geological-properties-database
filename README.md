@@ -1,4 +1,4 @@
-# Sites, samples, observations &amp; results database (Geological Properties Database)
+# Sites, samples, observations &amp; results database <br>(Geological Properties Database)
 
 One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve understanding of Queensland's resource potential.
 
@@ -85,6 +85,17 @@ TO DO
 * Site types  
 * Survey types
 
+## Mapping to MERLIN Surface Geology tables
+| Data Concept | MERLIN table | Comments |
+|---|---|---|
+|Geological Property|--|--|
+|Geoadmin Feature|--|--|
+|Site|sgf_sites|--|
+|Survey|--|--|
+|Sample|sgf_survey|--|
+|Observation|sgf_explore_techniques|--|
+|Result|--|--|
+
 ## Mapping to MERLIN tables
 | Data Concept | MERLIN table | Comments |
 |---|---|---|
@@ -97,11 +108,22 @@ TO DO
 |Result|--|--|
 
 
-## Mapping to GEM tables
+## Mapping to GEM Aerial Geophysics Surveys tables
 | Data Concept | GEM table | Comments |
 |---|---|---|
 |Geological Property|--|--|
-|Geoadmin Feature|--|--|
+|Geoadmin Feature|Aerial geophysics spatial extent|--|
+|Site|--|--|
+|Survey|--|--|
+|Sample|--|--|
+|Observation|--|--|
+|Result|--|--|
+
+## Mapping to GEM Seismic Surveys tables
+| Data Concept | GEM table | Comments |
+|---|---|---|
+|Geological Property|--|--|
+|Geoadmin Feature|Aerial geophysics spatial extent|--|
 |Site|--|--|
 |Survey|--|--|
 |Sample|--|--|
