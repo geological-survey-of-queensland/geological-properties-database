@@ -140,6 +140,13 @@ TO DO
 |Observation|--|--|
 |Result|--|--|
 
+
+## Derivation
+- Government Geoscience Information Committee (GGIC) [Australian Requirements for the Submission of Digital Exploration Data](http://www.australiaminerals.gov.au/__data/assets/pdf_file/0004/60772/National_Guidelines_Version_4.5_February_18.pdf)
+ - [PPDM](https://ppdm.org) for petroleum and gas
+ - [GeoSciML](http://www.geosciml.org/) for minerals
+ - [CoalLog](https://ausimm.com/coal-log/) for coal
+
 ## See also
 
 
