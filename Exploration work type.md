@@ -1,3 +1,5 @@
+# Survey Type
+
 ## Airborne Exploration Surveys
 - Aeromagnetics
 - Radiometrics
