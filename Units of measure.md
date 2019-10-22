@@ -87,7 +87,7 @@
 - POUNDS PER SQUARE INCH (psi)
 ## Resitivity
 - OHMMETRES (ohmms)
-- Rotation
+## Rotation
 - REVOLUTIONS PER MINUTE (RPM)
 ## Temperature
 - DEGREES CELSIUS (degc)
