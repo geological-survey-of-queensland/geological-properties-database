@@ -1,5 +1,7 @@
 # Units of measure
 
+> NOTE: This list needs to be coalesced with, or replaced by, the [Quantity, Unit, Dimension and Type \(QUDT\) vocabulary](https://www.qudt.org/)
+
 ## Casing Weight
 - KILOGRAMS PER METRE (kg/m)
 - POUNDS PER FOOT (lbs/ft)
