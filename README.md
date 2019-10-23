@@ -18,13 +18,14 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
-* Examples: minerals, hydrocarbons, water properties.  
+* Examples: minerals, hydrocarbons, water properties, stratigraphy, engineering  
 
 #### Geological or administrative feature
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
 * Administrative features are spatial features that are defined and managed by regulatory agencies.
 * Examples: basin, orogen, province, traugh, craton, permit, sub-block, resource accumulation.
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
+* See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
 #### Site
 * A sub-set of the geological or administrative feature.  
@@ -37,21 +38,25 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
+* See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
 * The enduring extract from the geological feature.  
 * Examples: drillcore, rock chip, soil sample, photograph, water.
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
+* See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
 * An act of carrying out an observation using a _procedure_ to estimate or calculate a value of a geological or administrative feature.
-* Examples: 
+* Examples: hyperspectral scanning, inductively coupled plasma spectrometry, 
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
+* See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
 #### Result
 * The result of the observation stored as a value together with the unit.  
 * Examples: concentration, quality, reserve size, weight, conductivity, vicosity, temperaure.
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
+* See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
 ## The Geological Properties Database
 The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
@@ -68,29 +73,107 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 ## Geological Properties Database conceptual data model
 TO DO  
 
-## Geological Properties Database data elements
-| Data Concept | MERLIN table | Comments |
+## Geological Property data elements
+|Data Element|Remarks|Source|
 |---|---|---|
-|Geological Property|--|--|
-|Geoadmin Feature|--|--|
-|Site|--|--|
-|Survey|--|--|
-|Sample|--|--|
-|Observation|--|--|
-|Result|--|--|  
+|Geological property ID|-|-|
+|Geological property name|-|-|
+|Geological property type|-|-|
+|Geological property status|-|-|
+|-|-|-|
+|-|-|-|
+
+## Geoadmin Feature data elements
+|Data Element|Remarks|Source|
+|---|---|---|
+|Feature ID|-|-|
+|Feature name|-|-|
+|Feature type|-|Vocab|
+|Feature status|-|Vocab|
+|Feature geometry|-|-|
+|-|-|-|
+
+## Site data elements
+|Data Element|Remarks|Source|
+|---|---|---|
+|Site ID|-|-|
+|Site name|-|-|
+|Site type|-|Vocab|
+|Site relationship|-|-|
+|Site geometry|-|-|
+
+
+## Survey data elements
+|Data Element|Remarks|Source|
+|---|---|---|
+|Survey ID|-|-|
+|Survey title|-|-|
+|Survey description|-|-|
+|Survey type|-|Vocab|
+|Survey operator|-|Vocab|
+|Survey status|-|Vocab|
+|Survey dimensionality|-|Vocab|
+|-|-|-|
+|Survey start time|-|-|
+|Survey end time|-|-|
+|Survey geometry|Spatial representation of the survey|--|
+|Access Rights|--|Vocab|
+
+
+## Samples data elements
+|Data Element|Remarks|Source|
+|---|---|---|
+|IGSN number|--|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|
+|IGSN object type|IGSN registered object type|[IGSN Codelist](https://vocabs.ands.org.au/viewById/188)|
+|Sample title|--|--|
+|Sample method|--|Vocab|
+|Sample type|--|Vocab|
+|Material type|--|Vocab|
+|Lithology|--|--|
+|Date acquired|--|xsd:date|
+|Acquired by|--|xsd:date|
+|Sample current location|--|--|
+|Sampling allowed|--|--|
+|Base|--|[QUDT](https://www.qudt.org/)|
+|Sample Top|--|[QUDT](https://www.qudt.org/)|
+|Sample Bottom|--|[QUDT](https://www.qudt.org/)|
+|Vertical datum|Australian Height Datum|[AHD](https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/ahdgm/ahd)|
+|Geometry|Spatial representation of the sample|--|
+|Coverage|3 letter country code|[ISO 3166](https://www.iso.org/iso-3166-country-codes.html)|
+|State|State or Territory|[ASGS](https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+\(ASGS\))|
+|Access Rights|--|Vocab|
+
+## Observation data elements
+|Data Element|Remarks|Source|
+|---|---|---|
+|Observation ID|-|-|
+|Observation type|Procedure or method|Vocab|
+|Observation date|-|-|
+|Observation top|-|-|
+|Observation bottom|-|-|
+|Observation bottom|-|-|
+|Observer|e.g. laboratory name|-|
+
+## Result data elements
+|Data Element|Remarks|Source|
+|---|---|---|
+|Result ID|-|-|
+|Result type|Geochem, hydrocarbons, biostratighy, geochronology?|Vocab|
+|Analyte|-|-|
+|Value|-|-|
+|Unit of measure|-|-|
 
 ## Geological Properties Database vocabularies
-| Vocabulary | Example values |
-|---|---|
-|Geoadmin features|--|
-|Site types|--|
-|Survey types|--|
-|Sample types|--|
-|Observation types|--|
+Vocabulary
+- [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
+- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
+- [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
+- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method) (requires review)
+- [Survey status](https://vocabs.gsq.digital/vocabulary/survey-status)
+- Observation types (new)
+- Site types (new)
+- Survey types (new)
 
-* Geoadmin features  
-* Site types  
-* Survey types
 
 ## Mapping to MERLIN Surface Geology tables
 | Data Concept | MERLIN table | Comments |
@@ -155,7 +238,8 @@ TO DO
 - Government Geoscience Information Committee (GGIC) [Australian Requirements for the Submission of Digital Exploration Data](http://www.australiaminerals.gov.au/__data/assets/pdf_file/0004/60772/National_Guidelines_Version_4.5_February_18.pdf)
 - [PPDM](https://ppdm.org) for petroleum and gas
 - [GeoSciML](http://www.geosciml.org/) for minerals
-- [CoalLog](https://ausimm.com/coal-log/) for coal
+- [CoalLog](https://ausimm.com/coal-log/) for coal  
+- [IGSN](http://igsn.github.io/)
 
 ## See also
 
@@ -175,5 +259,4 @@ Brisbane, QLD, Australia
 **David Crosswell**  
 Enterprise Architect  
 Cross-Lateral Enterprises  
-david@crosslateral.com.au  
 <https://crosslateral.com.au>  
