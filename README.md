@@ -24,7 +24,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
 * Administrative features are spatial features that are defined and managed by regulatory agencies.
 * Examples: basin, orogen, province, traugh, craton, permit, sub-block, resource accumulation.
-* See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features)
+* See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
 
 #### Site
 * A sub-set of the geological or administrative feature.  
