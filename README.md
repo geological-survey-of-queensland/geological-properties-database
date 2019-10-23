@@ -29,20 +29,24 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 #### Site
 * A sub-set of the geological or administrative feature.  
 * Examples: borehole, stream, seismic line.
+* See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
 * The one-off event of examination of a geological or administrative feature. 
 * The type of exploration work.
 * Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
+* See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 
 #### Sample
 * The enduring extract from the geological feature.  
 * Examples: drillcore, rock chip, soil sample, photograph, water.
+* See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 
 #### Observation
 * An act of carrying out an observation using a _procedure_ to estimate or calculate a value of a geological or administrative feature.
 * Examples: 
+* See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 
 #### Result
 * The result of the observation stored as a value together with the unit.  
@@ -170,5 +174,6 @@ Brisbane, QLD, Australia
 *Author*:  
 **David Crosswell**  
 Enterprise Architect  
-Cross-Lateral Enterprises   
+Cross-Lateral Enterprises  
+david@crosslateral.com.au  
 <https://crosslateral.com.au>  
