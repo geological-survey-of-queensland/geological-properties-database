@@ -101,7 +101,10 @@ TO DO
 |Site type|-|Vocab|
 |Site relationship|-|-|
 |Site geometry|-|-|
+|Site start date|-|-|
+|Site end date|-|-|
 
+NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database conceptual design](https://github.com/geological-survey-of-queensland/borehole-database). The Borehole Database is a component of the Geological Properties database.
 
 ## Survey data elements
 |Data Element|Remarks|Source|
@@ -113,12 +116,11 @@ TO DO
 |Survey operator|-|Vocab|
 |Survey status|-|Vocab|
 |Survey dimensionality|-|Vocab|
-|-|-|-|
+|Surveying instrument|-|-|
 |Survey start time|-|-|
 |Survey end time|-|-|
 |Survey geometry|Spatial representation of the survey|--|
 |Access Rights|--|Vocab|
-
 
 ## Samples data elements
 |Data Element|Remarks|Source|
@@ -128,6 +130,7 @@ TO DO
 |Sample title|--|--|
 |Sample method|--|Vocab|
 |Sample type|--|Vocab|
+|Sample description|--|--|
 |Material type|--|Vocab|
 |Lithology|--|--|
 |Date acquired|--|xsd:date|
@@ -135,13 +138,14 @@ TO DO
 |Sample current location|--|--|
 |Sampling allowed|--|--|
 |Base|--|[QUDT](https://www.qudt.org/)|
-|Sample Top|--|[QUDT](https://www.qudt.org/)|
-|Sample Bottom|--|[QUDT](https://www.qudt.org/)|
+|Sample top|--|[QUDT](https://www.qudt.org/)|
+|Sample bottom|--|[QUDT](https://www.qudt.org/)|
 |Vertical datum|Australian Height Datum|[AHD](https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/ahdgm/ahd)|
 |Geometry|Spatial representation of the sample|--|
 |Coverage|3 letter country code|[ISO 3166](https://www.iso.org/iso-3166-country-codes.html)|
 |State|State or Territory|[ASGS](https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+\(ASGS\))|
-|Access Rights|--|Vocab|
+|Access rights|--|Vocab|
+|Dataset link|--|--|
 
 ## Observation data elements
 |Data Element|Remarks|Source|
@@ -153,6 +157,12 @@ TO DO
 |Observation bottom|-|-|
 |Observation bottom|-|-|
 |Observer|e.g. laboratory name|-|
+|Job no|Laboratory job/batch nummber|-|
+|Assay code|Laboratory assay code|-|
+|Sample preparation|-|-|
+|Observation instrument|--|--|
+
+TODO: upper detection limit, lower detection limit
 
 ## Result data elements
 |Data Element|Remarks|Source|
@@ -181,10 +191,10 @@ Vocabulary
 |Geological Property|--|--|
 |Geoadmin Feature|--|--|
 |Site|sgf_sites|--|
-|Survey|--|--|
-|Sample|sgf_survey|--|
+|Survey|sgf_survey|--|
+|Sample|sgf_sample|--|
 |Observation|sgf_explore_techniques|--|
-|Result|--|--|
+|Result|sgf_analysis_results|--|
 
 ## Mapping to MERLIN tables
 | Data Concept | MERLIN table | Comments |
@@ -242,7 +252,11 @@ Vocabulary
 - [IGSN](http://igsn.github.io/)
 
 ## See also
-
+* [Geoadmin features ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)  
+* [GSQ site profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)  
+* [GSQ survey profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)  
+* [GSQ sample profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
+* [GSQ observation profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 
 ## Licence
 This code repository's content are licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), the deed of which is stored in this repository here: [LICENSE](LICENSE).
