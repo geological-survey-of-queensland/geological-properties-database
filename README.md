@@ -65,7 +65,8 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 * Replace the existing Surface Geology functionality in the MERLIN system.  
 * Replace the Cores and Cuttings functionality in MERLIN.  
 * Replace the Mineral Occurrences functionality in MERLIN.  
-* Replace the Aerial Geophysics functionality in GEM.
+* Replace the Aerial Geophysics functionality in GEM.  
+* Replace the Seismic Survey functionality in GEM.  
 * Capture the primary Geochemical data recorded in the Explorer3 system.  
 * Provide a repository for new data created by the department.  
 * Provide a repository for new data submitted to the department.  
@@ -76,105 +77,105 @@ TO DO
 ## Geological Property data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|Geological property ID|-|-|
-|Geological property name|-|-|
-|Geological property type|-|-|
-|Geological property status|-|-|
+|Geological property ID|A unique identifer|System|
+|Geological property name|A textual name|User|
+|Geological property type|Lookup to controlled list of property types|Vocab|
+|Geological property status|Lookup to controlled list of status|Vocab|
 |-|-|-|
 |-|-|-|
 
 ## Geoadmin Feature data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|Feature ID|-|-|
-|Feature name|-|-|
-|Feature type|-|Vocab|
-|Feature status|-|Vocab|
-|Feature geometry|-|-|
+|Feature ID|A unique identifer|System|
+|Feature name|A textual name|-|
+|Feature type|Lookup to controlled list of feature types|Vocab|
+|Feature status|Lookup to controlled list of status|Vocab|
+|Feature relationship|Records relationship between features|-|
+|Feature geometry|Spatial representation(s) of feature|-|
 |-|-|-|
 
 ## Site data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|Site ID|-|-|
-|Site name|-|-|
-|Site type|-|Vocab|
-|Site relationship|-|-|
-|Site geometry|-|-|
-|Site start date|-|-|
-|Site end date|-|-|
+|Site ID|A unique identifer|System|
+|Site name|A textual name|User|
+|Site type|A controlled list of site types|Vocab|
+|Site relationship|Records relationship between sites|System|
+|Site geometry|Spatial representation(s) of the site|WKT|
+|Site start date|Date active from|xsd:date|
+|Site end date|Date set to inactive|xsd:date|
+|Site details|Site-specific additional information|User|
 
 NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database conceptual design](https://github.com/geological-survey-of-queensland/borehole-database). The Borehole Database is a component of the Geological Properties database.
 
 ## Survey data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|Survey ID|-|-|
-|Survey title|-|-|
-|Survey description|-|-|
-|Survey type|-|Vocab|
-|Survey operator|-|Vocab|
-|Survey status|-|Vocab|
-|Survey dimensionality|-|Vocab|
-|Surveying instrument|-|-|
-|Survey start time|-|-|
-|Survey end time|-|-|
-|Survey geometry|Spatial representation of the survey|--|
-|Access Rights|--|Vocab|
+|Survey ID|A unique identifer|System|
+|Survey title|A textual name|User|
+|Survey description|A textual description|User|
+|Survey type|Lookup to controlled list of survey types|Vocab|
+|Survey operator|Lookup to controlled list of organisations|Lookup|
+|Survey status|Lifecycle status of the survey|Vocab|
+|Survey dimensionality|2D, 3D, 4D, etc.|Vocab|
+|Surveying instrument|Ideally a controlled list|Vocab?|
+|Survey start time|Commencement date|xsd:date|
+|Survey end time|Completion date|xsd:date|
+|Survey geometry|Spatial representation of the survey|WKT|
+|Access Rights|Controls user and system access to the resource|Vocab|
 
 ## Samples data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|IGSN number|--|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|
+|IGSN number|A globally unique identifer|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|
 |IGSN object type|IGSN registered object type|[IGSN Codelist](https://vocabs.ands.org.au/viewById/188)|
-|Sample title|--|--|
-|Sample method|--|Vocab|
-|Sample type|--|Vocab|
-|Sample description|--|--|
-|Material type|--|Vocab|
+|Sample title|A textual title|User|
+|Sample method|Controlled list of methods|Vocab|
+|Sample type|Controlled list of sample types|Vocab|
+|Sample description|A textual description|User|
+|Material type|Controlled list of materials|Vocab|
 |Lithology|--|--|
-|Date acquired|--|xsd:date|
-|Acquired by|--|xsd:date|
-|Sample current location|--|--|
-|Sampling allowed|--|--|
-|Base|--|[QUDT](https://www.qudt.org/)|
+|Date acquired|Lookup to controlled list of organisations|xsd:date|
+|Acquired by|Lookup to controlled list of organisations|Lookup|
+|Current location|Can link to EDC location|--|
+|Sampling allowed|Flag|--|
+|Base|Origin height|[QUDT](https://www.qudt.org/)|
 |Sample top|--|[QUDT](https://www.qudt.org/)|
 |Sample bottom|--|[QUDT](https://www.qudt.org/)|
 |Vertical datum|Australian Height Datum|[AHD](https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/ahdgm/ahd)|
 |Geometry|Spatial representation of the sample|--|
 |Coverage|3 letter country code|[ISO 3166](https://www.iso.org/iso-3166-country-codes.html)|
 |State|State or Territory|[ASGS](https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+\(ASGS\))|
-|Access rights|--|Vocab|
-|Dataset link|--|--|
+|Access rights|Controls user and system access to the resource|Vocab|
+|Dataset link|Links to related datasets|Hyperlink|
 
 ## Observation data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|Observation ID|-|-|
+|Observation ID|A unique identifer|System|
 |Observation type|Procedure or method|Vocab|
-|Observation date|-|-|
-|Observation top|-|-|
-|Observation bottom|-|-|
-|Observation bottom|-|-|
-|Observer|e.g. laboratory name|-|
-|Job no|Laboratory job/batch nummber|-|
-|Assay code|Laboratory assay code|-|
-|Sample preparation|-|-|
-|Observation instrument|--|--|
+|Observation date|-|xsd:date|
+|Observation top|-|[QUDT](https://www.qudt.org/)|
+|Observation bottom|-|[QUDT](https://www.qudt.org/)|
+|Observer|e.g. laboratory name (from org list)|Vocab|
+|Job no|Laboratory job/batch nummber|User|
+|Assay code|Laboratory assay code|Vocab|
+|Sample preparation|Ideally a controlled list|Vocab?|
+|Observation instrument|Ideally a controlled list|Vocab?|
 
-TODO: upper detection limit, lower detection limit
+TODO: upper detection limit, lower detection limit?
 
 ## Result data elements
 |Data Element|Remarks|Source|
 |---|---|---|
-|Result ID|-|-|
+|Result ID|A unique identifer|System|
 |Result type|Geochem, hydrocarbons, biostratighy, geochronology?|Vocab|
 |Analyte|-|-|
-|Value|-|-|
-|Unit of measure|-|-|
+|Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|
+|Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|
 
 ## Geological Properties Database vocabularies
-Vocabulary
 - [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
 - [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
@@ -185,27 +186,16 @@ Vocabulary
 - Survey types (new)
 
 
-## Mapping to MERLIN Surface Geology tables
+## Mapping to MERLIN tables
 | Data Concept | MERLIN table | Comments |
 |---|---|---|
-|Geological Property|--|--|
+|Geological Property|--|minocc?|
 |Geoadmin Feature|--|--|
 |Site|sgf_sites|--|
 |Survey|sgf_survey|--|
 |Sample|sgf_sample|--|
 |Observation|sgf_explore_techniques|--|
 |Result|sgf_analysis_results|--|
-
-## Mapping to MERLIN tables
-| Data Concept | MERLIN table | Comments |
-|---|---|---|
-|Geological Property|--|--|
-|Geoadmin Feature|--|--|
-|Site|--|--|
-|Survey|--|--|
-|Sample|--|--|
-|Observation|--|--|
-|Result|--|--|
 
 
 ## Mapping to GEM Aerial Geophysics Surveys tables
@@ -240,17 +230,6 @@ Vocabulary
 |Sample|--|--|
 |Observation|--|--|
 |Result|--|--|
-
-## Mapping to Australian Requirements for the Submission of Digital Exploration data
-| Data Concept | Code | Type of Data |
-|---|---|---|
-|Geological Property|-|-|
-|Geoadmin Feature|-|-|
-|Site|SL4<br>DS4|Drill hole locations<br>Downhole surveys|
-|Survey|DS4|Downhole surveys|
-|Sample|DL4<br>SG4|Downhole logs<br>Surface geochemistry|
-|Observation|QC4|QA/QC for geochemistry|
-|Result|DG4<br>SG4|Downhole geochemistry<br>Surface geochemistry|
 
 
 ## Derivation
