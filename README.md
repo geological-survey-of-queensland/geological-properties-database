@@ -1,10 +1,10 @@
 # Sites, samples, observations &amp; results database <br>(Geological Properties Database)
 
-One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve the understanding of Queensland's resource potential.
+One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve understanding of Queensland's resource potential.
 
-The GSQ creates, collects and provides geoscience data, information and advice on Queensland’s geothermal energy resources, mineral resources, coal resources, and petroleum resources including coal seam gas, unconventional petroleum, and oil shale. GSQ creates this knowledge through a range of geoscience projects and initiatives including industry exploration grants.
+GSQ creates, collects and provides geoscience data, information and advice on Queensland’s mineral resources, coal, coal seam gas, petroleum, including unconventional petroleum, oil shale and geothermal energy. GSQ creates this knowledge through a range of geoscience projects and initiatives including industry exploration grants.
 
-Fundamentally, the GSQ seeks to understand the geological properties of the State of Queensland, both surface and sub-surface.
+In summary, GSQ seeks to understand the geological properties of the State of Queensland, both surface and sub-surface.
 
 ## Geological properties data model
 <p align="center">
@@ -13,12 +13,12 @@ Figure 1: Geological properties data model</p>
 
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey
-on the feature, either as a whole feature, or on subsets of the feature. The survey yields samples that may be physical specimens or a record of attributes. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to understand the geological properties of the feature.
+on the feature, either as a whole feature, or on subsets of the feature. The survey yields samples. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to understand the geological properties of the feature.
 
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
-* Examples: mineral occurrences, hydrocarbons, water properties, stratigraphy, engineering data. 
+* Examples: minerals, hydrocarbons, water properties, stratigraphy, engineering  
 
 #### Geological or administrative feature
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
@@ -35,7 +35,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 #### Survey
 * The one-off event of examination of a geological or administrative feature. 
 * The type of exploration work.
-* Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey, petrophysical logging.
+* Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
@@ -203,8 +203,8 @@ TODO: upper detection limit, lower detection limit?
 |---|---|---|
 |Geological Property|--|--|
 |Geoadmin Feature|Aerial geophysics spatial extent|--|
-|Site|--|--|
-|Survey|--|--|
+|Site|AerialGeophysicalTenure|--|
+|Survey|AerialGeophysicalSurvey|--|
 |Sample|--|--|
 |Observation|--|--|
 |Result|--|--|
@@ -213,9 +213,9 @@ TODO: upper detection limit, lower detection limit?
 | Data Concept | GEM table | Comments |
 |---|---|---|
 |Geological Property|--|--|
-|Geoadmin Feature|Aerial geophysics spatial extent|--|
+|Geoadmin Feature|--|--|
 |Site|--|--|
-|Survey|--|--|
+|Survey|SeismicSurvey|--|
 |Sample|--|--|
 |Observation|--|--|
 |Result|--|--|
@@ -240,6 +240,7 @@ TODO: upper detection limit, lower detection limit?
 - [GeoSciML](http://www.geosciml.org/) for minerals
 - [CoalLog](https://ausimm.com/coal-log/) for coal  
 - [IGSN](http://igsn.github.io/)
+- [1EP Geoscience Project](http://appsuppt103/confluence/display/1EP/Geoscience)
 
 ## See also
 * [Geoadmin features ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)  
