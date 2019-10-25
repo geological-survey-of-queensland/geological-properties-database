@@ -241,6 +241,17 @@ Vocabulary
 |Observation|--|--|
 |Result|--|--|
 
+## Mapping to Australian Requirements for the Submission of Digital Exploration data
+| Data Concept | Code | Type of Data |
+|---|---|---|
+|Geological Property|-|-|
+|Geoadmin Feature|-|-|
+|Site|SL4<br>DS4|Drill hole locations<br>Downhole surveys|
+|Survey|DS4|Downhole surveys|
+|Sample|DL4<br>SG4|Downhole logs<br>Surface geochemistry|
+|Observation|QC4|QA/QC for geochemistry|
+|Result|DG4<br>SG4|Downhole geochemistry<br>Surface geochemistry|
+
 
 ## Derivation
 - [Minerals and coal reporting guideline (2019)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/mineral-coal-reporting-guideline)
