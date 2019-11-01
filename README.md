@@ -18,7 +18,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
-* Examples: minerals, hydrocarbons, water properties, stratigraphy, engineering  
+* Examples: mineralogy, hydrocarbons, water properties, stratigraphy, engineering  
 
 #### Geological or administrative feature
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
@@ -34,7 +34,8 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 
 #### Survey
 * The one-off event of examination of a geological or administrative feature. 
-* The type of exploration work.
+* The type of exploration work.  
+* THe survey can be of the feature as a whole, or a sub-set of the feature (a site).  
 * Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
@@ -42,6 +43,8 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 
 #### Sample
 * The enduring extract from the geological feature.  
+* Synonymous with ```specimen```.  
+* The sample may be the result of a survey, or a direct sample of the site.  
 * Examples: drillcore, rock chip, soil sample, photograph, water.
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
@@ -225,9 +228,9 @@ TODO: upper detection limit, lower detection limit?
 |---|---|---|
 |Geological Property|--|--|
 |Geoadmin Feature|--|--|
-|Site|--|--|
-|Survey|--|--|
-|Sample|--|--|
+|Site|h_Loc|--|
+|Survey|h_Suvey|--|
+|Sample|h_Sample - drillhole samples<br>s_RC - rockchip samples<br>s_Soil - soil samples<br>s_Seds - stream sediment samples<br>s_WholeRock - wholerock samples|--|
 |Observation|--|--|
 |Result|--|--|
 
@@ -236,6 +239,7 @@ TODO: upper detection limit, lower detection limit?
 - [Minerals and coal reporting guideline (2019)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/mineral-coal-reporting-guideline)
 - [Petroleum and gas reporting guideline (2018)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/pandg-reporting-guideline-2018)
 - Government Geoscience Information Committee (GGIC) [Australian Requirements for the Submission of Digital Exploration Data](http://www.australiaminerals.gov.au/__data/assets/pdf_file/0004/60772/National_Guidelines_Version_4.5_February_18.pdf)
+- [The Queensland Exploration Geochemistry And Drillhole Database and Database Packages Background information and operational guide](https://gsq-horizon.s3-ap-southeast-2.amazonaws.com/GEOCHEMISTRY+DATABASES/Geochemistry-data-instructions.pdf)
 - [PPDM](https://ppdm.org) for petroleum and gas
 - [GeoSciML](http://www.geosciml.org/) for minerals
 - [CoalLog](https://ausimm.com/coal-log/) for coal  
