@@ -29,6 +29,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 
 #### Site
 * A sub-set of the geological or administrative feature.  
+* Where the sample was collected.  
 * Examples: borehole, stream, seismic line.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
@@ -36,6 +37,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * The one-off event of examination of a geological or administrative feature. 
 * The type of exploration work.  
 * THe survey can be of the feature as a whole, or a sub-set of the feature (a site).  
+* ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
 * Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
@@ -45,6 +47,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * The enduring extract from the geological feature.  
 * Synonymous with ```specimen```.  
 * The sample may be the result of a survey, or a direct sample of the site.  
+* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **duplicates** - identical samples.
 * Examples: drillcore, rock chip, soil sample, photograph, water.
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
@@ -110,7 +113,9 @@ TO DO
 |Site end date|Date set to inactive|xsd:date|
 |Site details|Site-specific additional information|User|
 
-NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database conceptual design](https://github.com/geological-survey-of-queensland/borehole-database). The Borehole Database is a component of the Geological Properties database.
+> NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database conceptual design](https://github.com/geological-survey-of-queensland/borehole-database). The Borehole Database is a component of the Geological Properties database.
+
+> Question: Do we record the stratigraphy at the site level?
 
 ## Survey data elements
 |Data Element|Remarks|Source|
@@ -127,18 +132,21 @@ NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database c
 |Survey end time|Completion date|xsd:date|
 |Survey geometry|Spatial representation of the survey|WKT|
 |Access Rights|Controls user and system access to the resource|Vocab|
+|Dataset link|Links to related datasets including raw data|Hyperlink|
 
 ## Samples data elements
 |Data Element|Remarks|Source|
 |---|---|---|
 |IGSN number|A globally unique identifer|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|
 |IGSN object type|IGSN registered object type|[IGSN Codelist](https://vocabs.ands.org.au/viewById/188)|
+|Sample alias|Alternative sample label defined by sample collector|User|
 |Sample title|A textual title|User|
 |Sample method|Controlled list of methods|Vocab|
 |Sample type|Controlled list of sample types|Vocab|
 |Sample description|A textual description|User|
 |Material type|Controlled list of materials|Vocab|
-|Lithology|--|--|
+|Lithology|NOTE: This goes in results?|--|
+|Parent sample|Records subsample relationship to original sample|--|
 |Date acquired|Lookup to controlled list of organisations|xsd:date|
 |Acquired by|Lookup to controlled list of organisations|Lookup|
 |Current location|Can link to EDC location|--|
@@ -151,7 +159,7 @@ NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database c
 |Coverage|3 letter country code|[ISO 3166](https://www.iso.org/iso-3166-country-codes.html)|
 |State|State or Territory|[ASGS](https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+\(ASGS\))|
 |Access rights|Controls user and system access to the resource|Vocab|
-|Dataset link|Links to related datasets|Hyperlink|
+|Dataset link|Links to related datasets including raw data|Hyperlink|
 
 ## Observation data elements
 |Data Element|Remarks|Source|
@@ -167,16 +175,17 @@ NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database c
 |Sample preparation|Ideally a controlled list|Vocab?|
 |Observation instrument|Ideally a controlled list|Vocab?|
 
-TODO: upper detection limit, lower detection limit?
 
 ## Result data elements
 |Data Element|Remarks|Source|
 |---|---|---|
 |Result ID|A unique identifer|System|
 |Result type|Geochem, hydrocarbons, biostratighy, geochronology?|Vocab|
-|Analyte|-|-|
+|Analyte?|Element, oxide, compound, or property that was determined or measured by the laboratory. |-|
 |Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|
 |Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|
+
+> Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
 ## Geological Properties Database vocabularies
 - [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
@@ -187,6 +196,19 @@ TODO: upper detection limit, lower detection limit?
 - Observation types (new)
 - Site types (new)
 - Survey types (new)
+
+### Reference vocabs that may be used or harvested
+- [Sample type](https://vocabs.ands.org.au/viewById/185)  
+- [IGSN Codelist](https://vocabs.ands.org.au/viewById/188)
+- [Observation Method](https://vocabs.ands.org.au/viewById/89)
+- [Exploration Result](https://vocabs.ands.org.au/viewById/77)
+- [Sampling Method](https://vocabs.ands.org.au/viewById/195)
+- [Sampling Procedure](https://vocabs.ands.org.au/viewById/153)
+- [Sample Type](https://vocabs.ands.org.au/viewById/185)
+- [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
+- [Analysis](https://vocabs.ands.org.au/viewById/189)
+- [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
+- [NEII Observation Method](https://vocabs.ands.org.au/viewById/167)
 
 
 ## Mapping to MERLIN tables
@@ -240,11 +262,17 @@ TODO: upper detection limit, lower detection limit?
 - [Petroleum and gas reporting guideline (2018)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/pandg-reporting-guideline-2018)
 - Government Geoscience Information Committee (GGIC) [Australian Requirements for the Submission of Digital Exploration Data](http://www.australiaminerals.gov.au/__data/assets/pdf_file/0004/60772/National_Guidelines_Version_4.5_February_18.pdf)
 - [The Queensland Exploration Geochemistry And Drillhole Database and Database Packages Background information and operational guide](https://gsq-horizon.s3-ap-southeast-2.amazonaws.com/GEOCHEMISTRY+DATABASES/Geochemistry-data-instructions.pdf)
+- [Geochemistry data model for the Open Geoscience Data Model](https://www.bgs.ac.uk/services/dataModels/geochemistry.html)
+- [USGS National Geochemical Database data model](https://mrdata.usgs.gov/ngdb/sediment/about.php)
 - [PPDM](https://ppdm.org) for petroleum and gas
 - [GeoSciML](http://www.geosciml.org/) for minerals
 - [CoalLog](https://ausimm.com/coal-log/) for coal  
 - [IGSN](http://igsn.github.io/)
 - [1EP Geoscience Project](http://appsuppt103/confluence/display/1EP/Geoscience)
+- Geoscience Australia's [National Geochemical Survey of Australia Project](https://www.ga.gov.au/about/projects/resources/national-geochemical-survey). See also https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/65464
+- Geoscience Australia's [Geochemistry and Geochronology Themes metadata](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/65464)
+- GSQ [Geological Observations Data Package](http://qdexdata.dnrm.qld.gov.au/QDEXDataDownloadManager/Results?type=Geology&id=GSQ%20Site%20Locations)
+- GSQ [Mineral Occurence Data Package](http://qdexdata.dnrm.qld.gov.au/QDEXDataDownloadManager/Results?type=Geology&id=GSQ%20MinOcc)
 
 ## See also
 * [Geoadmin features ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)  
