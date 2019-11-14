@@ -256,6 +256,58 @@ TO DO
 |Observation|--|--|
 |Result|--|--|
 
+## Mapping to Geological Site Observation Database For Queensland (REGMAP)
+Data in the Geological observation data is derived from the Surface Geology System in MERLIN. The data has been decoded and concatenated into simple, relational database structures with MS Access software interfaces and in-built forms and queries to interrogate the data.
+
+The data compiled includes rock types, rock characteristics (e.g. colour, grain size, texture etc), structural measurements and formation name. See [Geological site observation database for Queensland (REGMAP).pdf](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/files/Geological%20site%20observation%20database%20for%20Queensland%20(REGMAP).pdf)
+
+In the future, this publication will be able to produced from the data in the Geological Properties database.
+
+| Table | -- | Comments |
+|---|---|---|
+|Agedets|--|--|
+|Biblio|--|--|
+|Comprep|h_Loc|--|
+|Coord_conversion|--|--|
+|Interval|--|--|
+|Interval_Obs|--|--|
+|Interval_Structure|--|--|
+|Location|--|--|
+|Mag_Sus|--|--|
+|Petrography|--|--|
+|Rock|--|--|
+|Rock_Obs|--|--|
+|Rock_Structure|--|--|
+|Samples|--|--|
+|Text|--|--|
+|Whole Rock Geochem|--|--|
+
+## Mapping to Mineral Occurrence Data for Queensland Database (MINOCC)
+The MINOCC database is a MS Access database with mine information, sites by commodity, geology reports for mines, production and resources, deposit models. The data is derived from MERLIN. See [MinOccDB in CSV format.zip](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/files/MinOccDB%20in%20CSV%20format.zip)
+
+In the future, this publication will be able to produced from the data in the Geological Properties database. 
+
+| Table | -- | Comments |
+|---|---|---|
+|Biblio|--|--|
+|Company reports|--|--|
+|Det_Model|h_Loc|--|
+|Explorer|--|--|
+|Gen_Model|--|--|
+|Host_Rock|--|--|
+|Location|--|--|
+|MineHist|--|--|
+|OrebodyObs|--|--|
+|OrebodyOrient|--|--|
+|Oremin_Age|--|--|
+|OreObs|--|--|
+|Production|--|--|
+|Resources|--|--|
+|Tenure|--|--|
+|Text|--|--|
+|Total_Alluvial_Prod|--|--|
+|Total_Ores_Prod|--|--|
+|Workings|--|--|
 
 ## Derivation
 - [TERN Plot Ontology](http://www.linked.data.gov.au/def/plot/)
