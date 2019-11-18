@@ -44,7 +44,7 @@ We seek to understand the geological properties of a geological or administrativ
 * A location within, or wholly encompassing, a geological or administrative feature.  
 * Where a survey is undertaken.
 * A site may be a component of a larger site.
-* Examples: borehole, stream, seismic line, seismic shot-point.
+* Examples: outcrop, borehole, stream, seismic line, seismic shot-point.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
