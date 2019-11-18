@@ -34,8 +34,10 @@ We seek to understand the geological properties of a geological or administrativ
   - Survey:       _Petrophysical Logging Job 1_
   - Sample:        _LAS file_
   - Observation:   _Density Curve_
-  - Result:        _1.62 g/cc_
+  - Result:        _1.62 g/cc @ 490mMD_
 
+  - Geological Property: The density of material is 1.62g/cc at 490m measured depth located in Wellname 1 within the Bowen Basin. 
+  
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
