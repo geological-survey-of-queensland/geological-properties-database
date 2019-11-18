@@ -2,9 +2,20 @@
 
 One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve understanding of Queensland's resource potential.
 
-GSQ creates, collects and provides geoscience data, information and advice on Queensland’s mineral resources, coal, coal seam gas, petroleum, including unconventional petroleum, oil shale and geothermal energy. GSQ creates this knowledge through a range of geoscience projects and initiatives including industry exploration grants.
+GSQ collects, interprets and provides geoscience data, information and advice on Queensland’s mineral resources, coal, coal seam gas, petroleum, including unconventional petroleum, oil shale and geothermal energy. GSQ creates this knowledge through a range of geoscience projects and initiatives, including industry exploration grants.
 
-In summary, GSQ seeks to understand the geological properties of the State of Queensland, both surface and sub-surface.
+The GSQ seeks to understand the geological properties of the State of Queensland, both surface and sub-surface.
+
+## Objectives of the Geological Properties Database
+The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data. The objectives are:
+* Replace the existing Surface Geology functionality in the MERLIN system.  
+* Replace the Cores and Cuttings functionality in MERLIN.  
+* Replace the Mineral Occurrences functionality in MERLIN.  
+* Replace the Aerial Geophysics functionality in GEM.  
+* Replace the Seismic Survey functionality in GEM.  
+* Capture the primary Geochemical data recorded in the Explorer3 system.  
+* Provide a repository for new data created by the department.  
+* Provide a repository for new data submitted to the department.  
 
 ## Geological properties data model
 <p align="center">
@@ -13,22 +24,22 @@ Figure 1: Geological properties data model</p>
 
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey
-on the feature, either as a whole feature, or on subsets of the feature. The survey yields samples. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to understand the geological properties of the feature.
+on the feature, either as a whole feature, or on subsets of the feature (a site). The survey yields samples. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to understand the geological properties of the feature.
 
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
-* Examples: mineralogy, hydrocarbons, water properties, stratigraphy, engineering  
+* Examples: petrography, mineralogy, chemistry, hydrocarbons, water composition, stratigraphy, engineering  
 
 #### Geological or administrative feature
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
 * Administrative features are spatial features that are defined and managed by regulatory agencies.
-* Examples: basin, orogen, province, traugh, craton, permit, sub-block, resource accumulation.
+* Examples: basin, province, trough, craton, orogen, permit, sub-block, resource accumulation.
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
 * See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
 #### Site
-* A sub-set of the geological or administrative feature.  
+* A location within a geological or administrative feature.  
 * Where the sample was collected.  
 * Examples: borehole, stream, seismic line.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
@@ -53,7 +64,7 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
-* An act of carrying out an observation using a _procedure_ to estimate or calculate a value of a geological or administrative feature.
+* An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature.
 * Examples: hyperspectral scanning, inductively coupled plasma spectrometry, 
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
@@ -63,19 +74,6 @@ on the feature, either as a whole feature, or on subsets of the feature. The sur
 * Examples: concentration, quality, reserve size, weight, conductivity, vicosity, temperaure.
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
-
-## The Geological Properties Database
-The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
-
-### Objectives of the Geological Properties Database
-* Replace the existing Surface Geology functionality in the MERLIN system.  
-* Replace the Cores and Cuttings functionality in MERLIN.  
-* Replace the Mineral Occurrences functionality in MERLIN.  
-* Replace the Aerial Geophysics functionality in GEM.  
-* Replace the Seismic Survey functionality in GEM.  
-* Capture the primary Geochemical data recorded in the Explorer3 system.  
-* Provide a repository for new data created by the department.  
-* Provide a repository for new data submitted to the department.  
 
 ## Geological Properties Database conceptual data model
 TO DO  
@@ -87,19 +85,16 @@ TO DO
 |Geological property name|A textual name|User|
 |Geological property type|Lookup to controlled list of property types|Vocab|
 |Geological property status|Lookup to controlled list of status|Vocab|
-|-|-|-|
-|-|-|-|
 
 ## Geoadmin Feature data elements
 |Data Element|Remarks|Source|
 |---|---|---|
 |Feature ID|A unique identifer|System|
-|Feature name|A textual name|-|
+|Feature name|A textual name|User|
 |Feature type|Lookup to controlled list of feature types|Vocab|
 |Feature status|Lookup to controlled list of status|Vocab|
-|Feature relationship|Records relationship between features|-|
-|Feature geometry|Spatial representation(s) of feature|-|
-|-|-|-|
+|Feature relationship|Records relationship between features|User|
+|Feature geometry|Spatial representation(s) of feature|WKT|
 
 ## Site data elements
 |Data Element|Remarks|Source|
@@ -107,6 +102,7 @@ TO DO
 |Site ID|A unique identifer|System|
 |Site name|A textual name|User|
 |Site type|A controlled list of site types|Vocab|
+|Site status|Lookup to controlled list of status|Vocab|
 |Site relationship|Records relationship between sites|System|
 |Site geometry|Spatial representation(s) of the site|WKT|
 |Site start date|Date active from|xsd:date|
@@ -174,7 +170,6 @@ TO DO
 |Assay code|Laboratory assay code|Vocab|
 |Sample preparation|Ideally a controlled list|Vocab?|
 |Observation instrument|Ideally a controlled list|Vocab?|
-
 
 ## Result data elements
 |Data Element|Remarks|Source|
