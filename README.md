@@ -1,68 +1,10 @@
 # Sites, samples, observations &amp; results database <br>(Geological Properties Database)
 
-One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve understanding of Queensland's resource potential.
+One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve the understanding of resource potential in Queensland.
 
-GSQ creates, collects and provides geoscience data, information and advice on Queensland’s mineral resources, coal, coal seam gas, petroleum, including unconventional petroleum, oil shale and geothermal energy. GSQ creates this knowledge through a range of geoscience projects and initiatives including industry exploration grants.
+GSQ creates, collects and provides geoscience data, information and advice on mineral resources, coal resources, coal seam gas, petroleum including unconventional petroleum, oil shale and geothermal energy within the State of Queensland. GSQ creates this knowledge through a range of geoscience projects and initiatives including industry exploration grants.
 
-In summary, GSQ seeks to understand the geological properties of the State of Queensland, both surface and sub-surface.
-
-## Geological properties data model
-<p align="center">
-<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-model.svg" width="560"><br>
-Figure 1: Geological properties data model</p>
-
-### A plain English definition
-We seek to understand the geological properties of a geological or administrative feature. We undertake a survey
-on the feature, either as a whole feature, or on subsets of the feature. The survey yields samples. We conduct observations on the samples using a particular procedure. The observation yields results as measured values. We interpret the results to understand the geological properties of the feature.
-
-### Definitions
-#### Geological property
-* The observable or measureable properties of a geological or administrative feature.  
-* Examples: mineralogy, hydrocarbons, water properties, stratigraphy, engineering  
-
-#### Geological or administrative feature
-* Geological features have properties that are of interest for commercial, environmental and societal reasons.  
-* Administrative features are spatial features that are defined and managed by regulatory agencies.
-* Examples: basin, orogen, province, traugh, craton, permit, sub-block, resource accumulation.
-* See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
-* See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
-
-#### Site
-* A sub-set of the geological or administrative feature.  
-* Where the sample was collected.  
-* Examples: borehole, stream, seismic line.
-* See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
-
-#### Survey
-* The one-off event of examination of a geological or administrative feature. 
-* The type of exploration work.  
-* THe survey can be of the feature as a whole, or a sub-set of the feature (a site).  
-* ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
-* Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
-* See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
-* See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
-* See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
-
-#### Sample
-* The enduring extract from the geological feature.  
-* Synonymous with ```specimen```.  
-* The sample may be the result of a survey, or a direct sample of the site.  
-* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **duplicates** - identical samples.
-* Examples: drillcore, rock chip, soil sample, photograph, water.
-* See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
-* See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
-
-#### Observation
-* An act of carrying out an observation using a _procedure_ to estimate or calculate a value of a geological or administrative feature.
-* Examples: hyperspectral scanning, inductively coupled plasma spectrometry, 
-* See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
-* See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
-
-#### Result
-* The result of the observation stored as a value together with the unit.  
-* Examples: concentration, quality, reserve size, weight, conductivity, vicosity, temperaure.
-* See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
-* See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
+The GSQ seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
 
 ## The Geological Properties Database
 The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
@@ -76,6 +18,68 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 * Capture the primary Geochemical data recorded in the Explorer3 system.  
 * Provide a repository for new data created by the department.  
 * Provide a repository for new data submitted to the department.  
+
+
+## Geological properties data model
+<p align="center">
+<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-model.svg" width="560"><br>
+Figure 1: Geological properties data model</p>
+
+### A plain English definition
+We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site, the site comprising either the whole feature, or a subset of the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
+
+### Definitions
+#### Geological property
+* The observable or measureable properties of a geological or administrative feature.  
+* Examples: mineralogy, hydrocarbon properties, water properties, stratigraphy, engineering data.  
+
+#### Geological or administrative feature
+* Geological features have properties that are of interest for commercial, environmental and societal reasons.  
+* Administrative features are spatial features that are defined and managed by regulatory agencies.
+* Examples: basin, province, trough, craton, orogen, permit, sub-block, resource accumulation.
+* See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
+* See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
+
+#### Site
+* A location within, or wholly encompassing, a geological or administrative feature.  
+* Where a survey is undertaken.
+* A site may be a component of a larger site.
+* Examples: borehole, stream, seismic line, seismic shot-point.
+* See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
+
+#### Survey
+* The one-off event examining a geological or administrative feature. 
+* The type of exploration work.   
+* ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
+* Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
+* See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
+* See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
+* See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
+
+#### Sample
+* The enduring extract from the geological feature.  
+* Synonymous with ```specimen```.
+*	The sample is a representative part a whole geological feature.
+* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, or **duplicates** - identical samples.
+* Examples: drill core, drill cuttings, soil sample, hand specimen, water, photograph, LAS file.
+* See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
+* See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
+
+#### Observation
+* An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature.
+* Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry, 
+* See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
+* See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
+
+#### Result
+* The result of the observation performed on a sample, stored as a value together with the unit.  
+* Examples: 
+  - Physical properites, e.g. concentration, mass, temperature
+  - Petrographic descriptions
+  - Geophysical measurements e.g. gravity, magnetic field strength
+  - Petrophysical log measurements e.g. gamma, density, resistivitiy.
+* See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
+* See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
 ## Geological Properties Database conceptual data model
 TO DO  
