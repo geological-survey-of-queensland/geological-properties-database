@@ -67,7 +67,7 @@ We seek to understand the geological properties of a geological or administrativ
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
-* The enduring extract from the geological feature.  
+* The enduring extract that the survey of the a produces.  
 * Synonymous with ```specimen```.
 *	The sample is a representative part a whole geological feature.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, or **duplicates** - identical samples.
