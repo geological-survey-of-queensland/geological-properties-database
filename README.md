@@ -198,7 +198,6 @@ TO DO
 - [Observation Method](https://vocabs.ands.org.au/viewById/89)
 - [Exploration Result](https://vocabs.ands.org.au/viewById/77)
 - [Sampling Method](https://vocabs.ands.org.au/viewById/195)
-- [Sampling Procedure](https://vocabs.ands.org.au/viewById/153)
 - [Sample Type](https://vocabs.ands.org.au/viewById/185)
 - [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
 - [Analysis](https://vocabs.ands.org.au/viewById/189)
