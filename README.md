@@ -186,7 +186,6 @@ TO DO
 - [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
 - [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
-- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method) (requires review)
 - [Survey status](https://vocabs.gsq.digital/vocabulary/survey-status)
 - Observation types (new)
 - Site types (new)
