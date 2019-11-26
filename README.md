@@ -1,4 +1,4 @@
-# Sites, samples, observations &amp; results database <br>(Geological Properties Database)
+# Geological Properties Database
 
 One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve the understanding of resource potential in Queensland.
 
