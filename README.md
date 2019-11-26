@@ -36,18 +36,6 @@ We seek to understand the geological properties of a geological or administrativ
 |Observation|Analysing density log at 490mMD|XRF Uranium Reading|Calculating gravity intensity at (x,y)|Measuring net coal at (x,y)|
 |Result|1.62 g/cc|142ppm(U)|9791197.22 μms-2 (AAGD07)|6.75 mTVD|
 |-|-|-|-|-|
-
-
-
-* Example:
-  - Feature:      _Bowen Basin_
-  - Site:         _Wellname 1_
-  - Survey:       _Petrophysical Logging Job 1_
-  - Sample:        _LAS file_
-  - Observation:   _Density Curve Analysis_
-  - Result:        _1.62 g/cc @ 490mMD_
-
-  - Geological Property: The density of material is 1.62g/cc at 490m measured depth located in Wellname 1 within the Bowen Basin. 
   
 ### Definitions
 #### Geological property
