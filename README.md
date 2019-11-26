@@ -31,7 +31,7 @@ We seek to understand the geological properties of a geological or administrativ
 |SOSA Category|Borehole|Geochemistry|Geophysics|Administrative|
 |---|---|---|---|---|
 |Feature|Bowen Basin|Mary Kathleen U Deposit|Queensland|EPC123|
-|Site|Well: Fair Gully 1|Surface Site (-20.744088, 140.013291)|Gravity Survey 2019GSQ-A1|EPC123|
+|Site|Well: Fair Gully 1|Surface Site GSQ-SF035 (-20.744088, 140.013291)|Gravity Survey 2019GSQ-A1|EPC123|
 |Survey|Wireline Log Run|Taking rock sample from outcrop|Flying Gravity Survey|Aggregating Net Coal Data|
 |Sample|LAS File|Hand Specimen A1|Gravity Intesity Grid|Coal Isopach|
 |Observation|Analysing density log at 490mMD|XRF Uranium Reading|Calculating gravity intensity at (x,y)|Measuring net coal at (x,y)|
