@@ -33,7 +33,7 @@ We seek to understand the geological properties of a geological or administrativ
 |Feature|Bowen Basin|Mary Kathleen U Deposit|Queensland|EPC123|
 |Site|Well: Fair Gully 1|Surface Site GSQ-SF035 (-20.744088, 140.013291)|Gravity Survey 2019GSQ-A1|EPC123|
 |Survey|Wireline Log Run|Taking rock sample from outcrop|Flying Gravity Survey|Aggregating Net Coal Data|
-|Sample|LAS File|Hand Specimen A1|Gravity Intesity Grid|Coal Isopach|
+|Sample|LAS File|Hand Specimen A1|Gravity Intensity Grid|Coal Isopach|
 |Observation|Analysing density log at 490mMD|XRF Uranium Reading|Calculating gravity intensity at (x,y)|Measuring net coal at (x,y)|
 |Result|1.62 g/cc|142ppm(U)|9791197.22 μms-2 (AAGD07)|6.75 mTVD|
 |-|-|-|-|-|
