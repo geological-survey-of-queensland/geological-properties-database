@@ -28,6 +28,18 @@ Figure 1: Geological properties data model</p>
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise of the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
 
+|SOSA Category|Borehole|Geochemistry|Geophysics|Administrative|
+|---|---|---|---|---|
+|Feature|Bowen Basin|Mary Kathleen U Deposit|Queensland|EPC123|
+|Site|Well: Fair Gully 1|Surface Site (-20.744088, 140.013291)|Gravity Survey 2019GSQ-A1|EPC123|
+|Survey|Wireline Log Run|Taking rock sample from outcrop|Flying Gravity Survey|Aggregating Net Coal Data|
+|Sample|LAS File|Hand Specimen A1|Gravity Intesity Grid|Coal Isopach|
+|Observation|Analysing density log at 490mMD|XRF Uranium Reading|Calculating gravity intensity at (x,y)|Measuring net coal at (x,y)|
+|Result|1.62 g/cc|142ppm(U)|9791197.22 μms-2 (AAGD07)|6.75 mTVD|
+|-|-|-|-|-|
+
+
+
 * Example:
   - Feature:      _Bowen Basin_
   - Site:         _Wellname 1_
