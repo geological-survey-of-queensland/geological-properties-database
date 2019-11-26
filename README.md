@@ -17,8 +17,7 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 * Replace the Seismic Survey functionality in GEM.  
 * Capture the primary Geochemical data recorded in the Explorer3 system.  
 * Provide a repository for new data created by the department.  
-* Provide a repository for new data submitted to the department.  
-
+* Provide a repository for new data submitted to the department.
 
 ## Geological properties data model
 <p align="center">
@@ -89,7 +88,7 @@ We seek to understand the geological properties of a geological or administrativ
 
 #### Observation
 * An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature.
-* Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry, 
+* Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
@@ -113,19 +112,16 @@ TO DO
 |Geological property name|A textual name|User|
 |Geological property type|Lookup to controlled list of property types|Vocab|
 |Geological property status|Lookup to controlled list of status|Vocab|
-|-|-|-|
-|-|-|-|
 
 ## Geoadmin Feature data elements
 |Data Element|Remarks|Source|
 |---|---|---|
 |Feature ID|A unique identifer|System|
-|Feature name|A textual name|-|
+|Feature name|A textual name|User|
 |Feature type|Lookup to controlled list of feature types|Vocab|
 |Feature status|Lookup to controlled list of status|Vocab|
-|Feature relationship|Records relationship between features|-|
-|Feature geometry|Spatial representation(s) of feature|-|
-|-|-|-|
+|Feature relationship|Records relationship between features|User|
+|Feature geometry|Spatial representation(s) of feature|WKT|
 
 ## Site data elements
 |Data Element|Remarks|Source|
@@ -133,6 +129,7 @@ TO DO
 |Site ID|A unique identifer|System|
 |Site name|A textual name|User|
 |Site type|A controlled list of site types|Vocab|
+|Site status|Lookup to controlled list of status|Vocab|
 |Site relationship|Records relationship between sites|System|
 |Site geometry|Spatial representation(s) of the site|WKT|
 |Site start date|Date active from|xsd:date|
@@ -201,7 +198,6 @@ TO DO
 |Sample preparation|Ideally a controlled list|Vocab?|
 |Observation instrument|Ideally a controlled list|Vocab?|
 
-
 ## Result data elements
 |Data Element|Remarks|Source|
 |---|---|---|
@@ -217,7 +213,6 @@ TO DO
 - [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
 - [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
-- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method) (requires review)
 - [Survey status](https://vocabs.gsq.digital/vocabulary/survey-status)
 - Observation types (new)
 - Site types (new)
@@ -229,7 +224,6 @@ TO DO
 - [Observation Method](https://vocabs.ands.org.au/viewById/89)
 - [Exploration Result](https://vocabs.ands.org.au/viewById/77)
 - [Sampling Method](https://vocabs.ands.org.au/viewById/195)
-- [Sampling Procedure](https://vocabs.ands.org.au/viewById/153)
 - [Sample Type](https://vocabs.ands.org.au/viewById/185)
 - [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
 - [Analysis](https://vocabs.ands.org.au/viewById/189)
@@ -282,8 +276,61 @@ TO DO
 |Observation|--|--|
 |Result|--|--|
 
+## Mapping to Geological Site Observation Database For Queensland (REGMAP)
+Data in the Geological observation database is derived from the Surface Geology System in MERLIN. The data has been decoded and concatenated into simple, relational database structures with MS Access software interfaces and in-built forms and queries to interrogate the data.
+
+The data compiled includes rock types, rock characteristics (e.g. colour, grain size, texture etc), structural measurements and formation name. See [Geological site observation database for Queensland (REGMAP).pdf](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/files/Geological%20site%20observation%20database%20for%20Queensland%20(REGMAP).pdf) and [database_of_site_observations.png](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/database_of_site_observations.png)
+
+In the future, this publication will be able to produced from the data in the Geological Properties database.
+
+| Table | -- | Comments |
+|---|---|---|
+|Agedets|--|--|
+|Biblio|--|--|
+|Comprep|h_Loc|--|
+|Coord_conversion|--|--|
+|Interval|--|--|
+|Interval_Obs|--|--|
+|Interval_Structure|--|--|
+|Location|--|--|
+|Mag_Sus|--|--|
+|Petrography|--|--|
+|Rock|--|--|
+|Rock_Obs|--|--|
+|Rock_Structure|--|--|
+|Samples|--|--|
+|Text|--|--|
+|Whole Rock Geochem|--|--|
+
+## Mapping to Mineral Occurrence Data for Queensland Database (MINOCC)
+The MINOCC database is a MS Access database with mine information, sites by commodity, geology reports for mines, production and resources, deposit models. The data is derived from MERLIN. See [MinOccDB in CSV format.zip](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/files/MinOccDB%20in%20CSV%20format.zip) and [minocc_database.png](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/minocc_database.png)
+
+In the future, this publication will be able to produced from the data in the Geological Properties database. 
+
+| Table | -- | Comments |
+|---|---|---|
+|Biblio|--|--|
+|Company reports|--|--|
+|Det_Model|h_Loc|--|
+|Explorer|--|--|
+|Gen_Model|--|--|
+|Host_Rock|--|--|
+|Location|--|--|
+|MineHist|--|--|
+|OrebodyObs|--|--|
+|OrebodyOrient|--|--|
+|Oremin_Age|--|--|
+|OreObs|--|--|
+|Production|--|--|
+|Resources|--|--|
+|Tenure|--|--|
+|Text|--|--|
+|Total_Alluvial_Prod|--|--|
+|Total_Ores_Prod|--|--|
+|Workings|--|--|
 
 ## Derivation
+- [TERN Plot Ontology](http://www.linked.data.gov.au/def/plot/)
 - [Minerals and coal reporting guideline (2019)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/mineral-coal-reporting-guideline)
 - [Petroleum and gas reporting guideline (2018)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/pandg-reporting-guideline-2018)
 - Government Geoscience Information Committee (GGIC) [Australian Requirements for the Submission of Digital Exploration Data](http://www.australiaminerals.gov.au/__data/assets/pdf_file/0004/60772/National_Guidelines_Version_4.5_February_18.pdf)
