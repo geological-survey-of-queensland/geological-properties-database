@@ -84,7 +84,10 @@ We seek to understand the geological properties of a geological or administrativ
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
 ## Geological Properties Database conceptual data model
-TO DO  
+<p align="center">
+<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-conceptual-ERD.png"><br>
+Figure 1: Geological Properties Conceptual Model</p>
+
 
 ## Geological Property data elements
 |Data Element|Remarks|Source|
