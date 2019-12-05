@@ -27,15 +27,8 @@ Figure 1: Geological properties data model</p>
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise of the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
 
-|SOSA Category|Borehole|Geochemistry|Geophysics|Administrative|
-|---|---|---|---|---|
-|Feature (Ultimate Feature of Interest)|Bowen Basin|Mary Kathleen U Deposit|Queensland|EPC123|
-|Site (Proximate Feature of Interest)|Well: Fair Gully 1|Surface Site GSQ-SF035 (-20.744088, 140.013291)|Extent of Gravity Survey 2019GSQ-A1|_EPC123_|
-|Survey (Activity)|Wireline Log Run|Taking rock sample from outcrop|Gravity Survey 2019GSQ-A1|Aggregating Net Coal Data|
-|Sample (Specimen)|LAS File|Hand Specimen A1|2019GSQ-A1 Gravity Intensity Grid|EPC123 Coal Isopach|
-|Observation|Analysing density log at 490mMD|XRF Uranium Reading|Calculating gravity intensity at (x,y)|Measuring net coal at (x,y)|
-|Result|1.62 g/cc|142ppm(U)|9791197.22 μms-2 (AAGD07)|6.75 mTVD|
-|-|-|-|-|-|
+<p align="center">
+<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/SSOR_Examples.png" width="1120"><br>
   
 ### Definitions
 #### Geological property
