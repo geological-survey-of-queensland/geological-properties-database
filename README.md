@@ -90,106 +90,113 @@ Figure 1: Geological Properties Conceptual Model</p>
 
 
 ## Geological Property data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|Geological property ID|A unique identifer|System|
-|Geological property name|A textual name|User|
-|Geological property type|Lookup to controlled list of property types|Vocab|
-|Geological property status|Lookup to controlled list of status|Vocab|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|Geological property ID|A unique identifer|System|-|-|
+|Geological property name|A textual name|User|-|-|
+|Geological property type|Lookup to controlled list of property types|Vocab|-|-|
+|Geological property status|Lookup to controlled list of status|Vocab|-|-|
 
 ## Geoadmin Feature data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|Feature ID|A unique identifer|System|
-|Feature name|A textual name|User|
-|Feature type|Lookup to controlled list of feature types|Vocab|
-|Feature status|Lookup to controlled list of status|Vocab|
-|Feature relationship|Records relationship between features|User|
-|Feature geometry|Spatial representation(s) of feature|WKT|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|Feature ID|A unique identifer|System|-|-|
+|Feature name|A textual name|User|-|-|
+|Feature type|Lookup to controlled list of feature types|Vocab|-|-|
+|Feature status|Lookup to controlled list of status|Vocab|-|-|
+|Feature relationship|Records relationship between features|User|-|-|
+|Feature geometry|Spatial representation(s) of feature|WKT|-|-|
 
 ## Site data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|Site ID|A unique identifer|System|
-|Site name|A textual name|User|
-|Site type|A controlled list of site types|Vocab|
-|Site status|Lookup to controlled list of status|Vocab|
-|Site relationship|Records relationship between sites|System|
-|Site geometry|Spatial representation(s) of the site|WKT|
-|Site start date|Date active from|xsd:date|
-|Site end date|Date set to inactive|xsd:date|
-|Site details|Site-specific additional information|User|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|Site ID|A unique identifer|System|-|-|
+|Site name|A textual name|User|-|-|
+|Site description|A textual description|User|-|-|
+|Site type|A controlled list of site types|Vocab|-|-|
+|Site status|Lookup to controlled list of status|Vocab|-|-|
+|Site status start date|Date status active from|xsd:date|-|-|
+|Site status end date|Date status set to inactive|xsd:date|-|-|
+|Site relationship|Records relationship between sites|System|-|-|
+|Site geometry|Spatial representation(s) of the site|WKT|-|-|
+|Site details|Site-specific additional information|User|-|-|
+|Dataset link|Links to related datasets including raw data|Hyperlink|-|-|
 
 > NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database conceptual design](https://github.com/geological-survey-of-queensland/borehole-database). The Borehole Database is a component of the Geological Properties database.
 
 > Question: Do we record the stratigraphy at the site level?
 
 ## Survey data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|Survey ID|A unique identifer|System|
-|Survey title|A textual name|User|
-|Survey description|A textual description|User|
-|Survey type|Lookup to controlled list of survey types|Vocab|
-|Survey operator|Lookup to controlled list of organisations|Lookup|
-|Survey status|Lifecycle status of the survey|Vocab|
-|Survey dimensionality|2D, 3D, 4D, etc.|Vocab|
-|Surveying instrument|Ideally a controlled list|Vocab?|
-|Survey start time|Commencement date|xsd:date|
-|Survey end time|Completion date|xsd:date|
-|Survey geometry|Spatial representation of the survey|WKT|
-|Access Rights|Controls user and system access to the resource|Vocab|
-|Dataset link|Links to related datasets including raw data|Hyperlink|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|Survey ID|A unique identifer|System|-|-|
+|Survey title|A textual name|User|-|-|
+|Survey description|A textual description|User|-|-|
+|Survey type|Lookup to controlled list of survey types|Vocab|-|-|
+|Survey method|Lookup to controlled list of survey methods|Vocab|-|-|
+|Survey permit|The permit(s) that survey was performed under|Lookup|-|-|
+|Survey status|Lifecycle status of the survey|Vocab|-|-|
+|Survey operator|Lookup to controlled list of organisations|Lookup|-|-|
+|Survey start time|Commencement date|xsd:date|-|-|
+|Survey end time|Completion date|xsd:date|-|-|
+|Survey geometry|Spatial representation of the survey|WKT|-|-|
+|Survey access rights|Controls user and system access to the resource|Vocab|-|-|
+|Survey details|Survey-specific additional information|User|-|-|
+|Dataset link|Links to related datasets including raw data|Hyperlink|-|-|
 
 ## Samples data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|IGSN number|A globally unique identifer|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|
-|IGSN object type|IGSN registered object type|[IGSN Codelist](https://vocabs.ands.org.au/viewById/188)|
-|Sample alias|Alternative sample label defined by sample collector|User|
-|Sample title|A textual title|User|
-|Sample method|Controlled list of methods|Vocab|
-|Sample type|Controlled list of sample types|Vocab|
-|Sample description|A textual description|User|
-|Material type|Controlled list of materials|Vocab|
-|Lithology|NOTE: This goes in results?|--|
-|Parent sample|Records subsample relationship to original sample|--|
-|Date acquired|Lookup to controlled list of organisations|xsd:date|
-|Acquired by|Lookup to controlled list of organisations|Lookup|
-|Current location|Can link to EDC location|--|
-|Sampling allowed|Flag|--|
-|Base|Origin height|[QUDT](https://www.qudt.org/)|
-|Sample top|--|[QUDT](https://www.qudt.org/)|
-|Sample bottom|--|[QUDT](https://www.qudt.org/)|
-|Vertical datum|Australian Height Datum|[AHD](https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/ahdgm/ahd)|
-|Geometry|Spatial representation of the sample|--|
-|Coverage|3 letter country code|[ISO 3166](https://www.iso.org/iso-3166-country-codes.html)|
-|State|State or Territory|[ASGS](https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+\(ASGS\))|
-|Access rights|Controls user and system access to the resource|Vocab|
-|Dataset link|Links to related datasets including raw data|Hyperlink|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|IGSN number|A globally unique identifer|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|-|-|
+|Sample title|A textual name|User|-|-|
+|Sample alias|An alternative identifier for the sample|User|-|-|
+|Sample description|A textual description|User|-|-|
+|IGSN object type|IGSN registered object type|[IGSN Codelist](https://vocabs.ands.org.au/viewById/188)|-|-|
+|Sample alias|Alternative sample label defined by sample collector|User|-|-|
+|Sample is result of|The survey that yielded the sample|User|-|-|
+|Acquired by|Lookup to controlled list of organisations|Lookup|-|-|
+|Date acquired|Lookup to controlled list of organisations|xsd:date|-|-|
+|Sample method|Controlled list of methods|Vocab|-|-|
+|Material type|Controlled list of materials|Vocab|-|-|
+|Sample relationship|Records sample relationship to original sample|Vocab|-|-|
+|Sampling allowed|Indicates if further sampling is allowed|Flag|-|-|
+|Sample current location|Records physical location of sample (e.g. at EDC)|User|-|-|
+|Current location|Can link to EDC location|--|-|-|
+|Sampling allowed|Flag|--|-|-|
+|Sample base|Origin height|[QUDT](https://www.qudt.org/)|-|-|
+|Sample top|The top|[QUDT](https://www.qudt.org/)|-|-|
+|Sample bottom|The bottom|[QUDT](https://www.qudt.org/)|-|-|
+|Vertical datum|Australian Height Datum|[AHD](https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/ahdgm/ahd)|-|-|
+|Coverage|3 letter country code (AUS) for IGSN|[ISO 3166](https://www.iso.org/iso-3166-country-codes.html)|-|-|
+|State|State or Territory (Queensland) for IGSN|[ASGS](https://www.abs.gov.au/websitedbs/D3310114.nsf/home/Australian+Statistical+Geography+Standard+\(ASGS\))|-|-|
+|Access rights|Controls user and system access to the resource|Vocab|-|-|
+|Sample details|Sample-specific additional information|User|-|-|
+|Dataset link|Links to related datasets including raw data|Hyperlink|-|-|
+|Sample geometry|Spatial representation of the sample|WKT|-|-|
 
 ## Observation data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|Observation ID|A unique identifer|System|
-|Observation type|Procedure or method|Vocab|
-|Observation date|-|xsd:date|
-|Observation top|-|[QUDT](https://www.qudt.org/)|
-|Observation bottom|-|[QUDT](https://www.qudt.org/)|
-|Observer|e.g. laboratory name (from org list)|Vocab|
-|Job no|Laboratory job/batch nummber|User|
-|Assay code|Laboratory assay code|Vocab|
-|Sample preparation|Ideally a controlled list|Vocab?|
-|Observation instrument|Ideally a controlled list|Vocab?|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|Observation ID|A unique identifer|System|-|-|
+|Observer|e.g. laboratory name (from org list)|Lookup|-|-|
+|Observation type|Procedure or method|Vocab|-|-|
+|Observation date|-|xsd:date|-|-|
+|Observation top|-|[QUDT](https://www.qudt.org/)|-|-|
+|Observation bottom|-|[QUDT](https://www.qudt.org/)|-|-|
+|Sample preparation|Ideally a controlled list|Vocab?|-|-|
+|Job no|Laboratory job/batch nummber|User|-|-|
+|Assay code|Laboratory assay code|Vocab|-|-|
+|Observation instrument|Ideally a controlled list|Vocab?|-|-|
+|Observation details|Observation-specific additional information|User|-|-|
 
 ## Result data elements
-|Data Element|Remarks|Source|
-|---|---|---|
-|Result ID|A unique identifer|System|
-|Result type|Geochem, hydrocarbons, biostratighy, geochronology?|Vocab|
-|Analyte?|Element, oxide, compound, or property that was determined or measured by the laboratory. |-|
-|Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|
-|Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|
+|Data Element|Remarks|Source|DataType|Length|
+|---|---|---|---|---|
+|Result ID|A unique identifer|System|-|-|
+|Result type|Geochem, hydrocarbons, biostratighy, geochronology?|Vocab|-|-|
+|Analyte|Element, oxide, compound, or property that was determined or measured by the laboratory. |-|-|-|
+|Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|-|-|
+|Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|-|-|
 
 > Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
@@ -344,7 +351,7 @@ This code repository's content are licensed under the [Creative Commons Attribut
 ## Contacts
 *System owner*:  
 **Mark Gordon**  
-Geological Survey of Quensland  
+Geological Survey of Queensland  
 Department of Natural Resources, Mines and Energy  
 Brisbane, QLD, Australia  
 <mark.gordon@dnrme.qld.gov.au>  
