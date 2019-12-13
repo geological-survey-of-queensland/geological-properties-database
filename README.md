@@ -88,7 +88,7 @@ We seek to understand the geological properties of a geological or administrativ
   - Physical properites, e.g. concentration, mass, temperature
   - Petrographic descriptions
   - Geophysical measurements e.g. gravity, magnetic field strength
-  - Petrophysical log measurements e.g. gamma, density, resistivitiy.
+  - Petrophysical log measurements e.g. gamma, density, resistivity.
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
