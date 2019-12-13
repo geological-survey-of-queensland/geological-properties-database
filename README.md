@@ -48,16 +48,16 @@ We seek to understand the geological properties of a geological or administrativ
 #### Proximate Feature of Interest - Sites
 * An entity or location within, or wholly encompassing, a feature that acts as a proxy to represent a complete (ultimate) feature.  
 * A Feature of Interest is proximate when it represents a larger feature, as opposed to being a discrete component of a larger feature. e.g. an outcrop can be examined as a representitive of a formation, whereas a formation does not represent a whole basin but is a component of it.
-* Where a sampling is undertaken, but the survey geometries of each do not necessarily have to be equivalent.
+* Where a sampling is undertaken, but the sampling geometry and site geometry do not necessarily have to be equivalent.
 * A site may be a component of a larger site.
 * proxFeature representativeOf ultFeature
-* Examples: outcrop, borehole, stream, seismic line, seismic shot-point.
+* Examples: outcrop, borehole, stream, seismic line, seismic shot-point (see Practical Usage note below).
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Sampling - Survey, Activity, Process
-* The one-off event that produces a Sample. 
+* The one-off event or process that produces a Sample. 
 * An act of Sampling carries out a procedure to create or transform one or more Samples.
-* In many cases there is a chain of samples and sub-samples created through iterative sampling. The sampling of a feature is commonly the original survey, and the sampling of samples are derivative sampling or processing. Any sub-sample in the chain may be an _originalSample_ relevant to a collection of results e.g. The original sampling may collecting core, a sub-sampling of collecting a coal sample from that core may be the relevant originalSample for subsequent results, and several steps of sample processing may produce the samples for analysis whose results relate back to the original coal sample derived from core.  
+* In many cases there is a chain of samples and sub-samples created through iterative sampling. The sampling of a feature is commonly the original survey, and the sampling of samples is derivative sampling or processing. Any sub-sample in a chain may be an _originalSample_ relevant to a collection of results e.g. The original sampling may collecting core, a sub-sampling that collects a coal sample from that core may be the relevant originalSample for subsequent results, and several steps of sample processing may produce the sub-samples for analysis whose results are relevant to the original coal sample derived from core.  
 * The type of exploration, assessment, or processing work.   
 * ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
 * Examples: seismic survey, seismic reprocessing, geochemical survey, gravity survey, magnetotelluric survey, coal quality sample processing.
@@ -66,7 +66,7 @@ We seek to understand the geological properties of a geological or administrativ
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
-* The enduring artefact that the sampling produces.  
+* The enduring artefact that sampling produces.  
 * Synonymous with ```specimen``` for physical artefacts.
 *	The sample is a representative part of a feature of interest.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
@@ -93,7 +93,7 @@ We seek to understand the geological properties of a geological or administrativ
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
 #### Practical Usage
-* Conceptually each data point in a LAS file is a result, however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result.  
+* Conceptually each data point in a LAS file is a result (and a LAS file is a collection of samples), however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result.  
 * While theoretically there is a coherent chain from Ultimate Feature to Result it may be implicit, misleading, or superfluous to include each element e.g. a strike and dip measurement on an outcrop is an observation, but recording it as a survey of measurements recorded with a sample as a written notebook is most likely superfluous, of little value, unlikely to reference a findable object, and merely uses space in a catalogue and data store. 
 * A seismic receiver location _is_ a site within a seismic line site, but in implementation the database will record lines and the receiver locations will remain within the referenced files (documents) or as sample locations.
 
