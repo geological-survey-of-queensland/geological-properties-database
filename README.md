@@ -77,13 +77,13 @@ We seek to understand the geological properties of a geological or administrativ
 
 #### Observation
 * An act of carrying out an observation using a _procedure_ to measure, estimate, derive a value of, or describe a feature.
-* Observations differ from sampling in that sampling yields an artefect, whereas an observation yields a qualitative or quantitative result.
+* Observations differ from sampling in that sampling yields an artefact, whereas an observation yields a qualitative or quantitative result.
 * Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
 #### Result
-* The result of the observation performed on a sample, stored as a value together with the unit.  
+* The result of the observation performed on a sample, stored as a description or a value and unit of measure.  
 * Examples: 
   - Physical properites, e.g. concentration, mass, temperature
   - Petrographic descriptions
