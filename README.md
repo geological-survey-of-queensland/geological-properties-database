@@ -70,14 +70,14 @@ We seek to understand the geological properties of a geological or administrativ
 * Synonymous with ```specimen```.
 *	The sample is a representative part of a feature of interest.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
-* Samples may be physical samples or abstract extracts such as pictures, digital information etc.
-* Examples: drill core, drill cuttings, soil sample, hand specimen, water, photograph, LAS file.
+* Samples may be physical samples or abstract artefacts such as pictures, digital information etc.
+* Examples: drill core, drill cuttings, soil samples, hand specimens, water, photographs, LAS files.
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
-* An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature.
-* Observations differ from sampling in that sampling yields a sample, whereas an observation yields a qualitative or quantitative result.
+* An act of carrying out an observation using a _procedure_ to measure, estimate, derive a value of, or describe a feature.
+* Observations differ from sampling in that sampling yields an artefect, whereas an observation yields a qualitative or quantitative result.
 * Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
