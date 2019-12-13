@@ -57,8 +57,8 @@ We seek to understand the geological properties of a geological or administrativ
 #### Sampling - Survey, Activity, Process
 * The one-off event that produces a Sample. 
 * An act of Sampling carries out a procedure to create or transform one or more Samples.
-* In many cases there is a chain of samples, each sub-sampling another sample. Therefore sampling may be performed iteratively on samples to produce a chain of sub-samples. The sampling of a feature or site typically being the original survey, and the sampling of samples being derivative sampling or processing. Any sub-sample may be a _sample of interest_ for a collection of results e.g. The original sampling may be coring, a sub-sampling to collect a coal sample from that core may be the relevant sample of interest, and several steps of sample processing may result in samples for analysis whose results relate back to the original coal from core.  
-* The type of exploration work.   
+* In many cases there is a chain of samples and sub-samples created through iterative sampling. The sampling of a feature is commonly the original survey, and the sampling of samples are derivative sampling or processing. Any sub-sample in the chain may be an _originalSample_ relevant to a collection of results e.g. The original sampling may collecting core, a sub-sampling of collecting a coal sample from that core may be the relevant originalSample for subsequent results, and several steps of sample processing may produce the samples for analysis whose results relate back to the original coal sample derived from core.  
+* The type of exploration, assessment, or processing work.   
 * ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
 * Examples: seismic survey, seismic reprocessing, geochemical survey, gravity survey, magnetotelluric survey, coal quality sample processing.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
@@ -67,7 +67,7 @@ We seek to understand the geological properties of a geological or administrativ
 
 #### Sample
 * The enduring artefact that the sampling produces.  
-* Synonymous with ```specimen```.
+* Synonymous with ```specimen``` for physical artefacts.
 *	The sample is a representative part of a feature of interest.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
 * Samples may be physical samples or abstract artefacts such as pictures, digital information etc.
