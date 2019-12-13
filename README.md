@@ -39,7 +39,7 @@ We seek to understand the geological properties of a geological or administrativ
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
 * Administrative features are spatial features that are defined and managed by regulatory agencies.
 * Ultimate features of interest are entities that are discrete, complete, and internally coherent. 
-* Ultimate features may be components of larger features of interest as part of a set where they each is still a discrete entity e.g. formations within a basin.  
+* Ultimate features may be components of larger features of interest as part of a set where each is an independent discrete entity e.g. formations within a basin.  
 * ultFeature componentOf ultfeature
 * Examples: basin, province, trough, craton, orogen, formation, permit, sub-block, resource accumulation.
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
