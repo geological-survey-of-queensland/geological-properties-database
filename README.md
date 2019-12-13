@@ -35,25 +35,32 @@ We seek to understand the geological properties of a geological or administrativ
 * The observable or measureable properties of a geological or administrative feature.  
 * Examples: mineralogy, hydrocarbon properties, water properties, stratigraphy, engineering data.  
 
-#### Geological or administrative feature
+#### Ultimate Feature of Interest - Geological or administrative features
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
 * Administrative features are spatial features that are defined and managed by regulatory agencies.
-* Examples: basin, province, trough, craton, orogen, permit, sub-block, resource accumulation.
+* Ultimate features of interest are entities that are discrete, complete, and internally coherent. 
+* Ultimate features may be components of larger features of interest as part of a set where they each is still a discrete entity e.g. formations within a basin.  
+* ultFeature componentOf ultfeature
+* Examples: basin, province, trough, craton, orogen, formation, permit, sub-block, resource accumulation.
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
 * See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
-#### Site
-* A location within, or wholly encompassing, a geological or administrative feature.  
+#### Proximate Feature of Interest - Sites
+* An entity or location within, or wholly encompassing, a geological or administrative feature that acts as a proxy to represent a complete (ultimate) feature.  
+* A Feature of Interest is proximate when it represents a larger feature, as opposed to being a discrete component of a larger feature. e.g. an outcrop can be examined as a representitive of a formation, whereas a formation does not represent a whole basin but is a component of it.
 * Where a survey is undertaken.
 * A site may be a component of a larger site.
+* proxFeature representativeOf ultFeature
 * Examples: outcrop, borehole, stream, seismic line, seismic shot-point.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
-#### Survey
-* The one-off event examining a geological or administrative feature. 
+#### Sampling - Survey, Activity, Process
+* The one-off event that produces a Sample. 
+* An act of Sampling carries out a procedure to create or transform one or more Samples.
+* In many cases there is a chain of samples, each sub-sampling another sample. Therefore sampling may be performed iteratively on samples to produce a chain of sub-samples. The sampling of a feature or site typically being the original survey, and the sampling of samples being derivative sampling or processing. Any sub-sample may be a _sample of interest_ for a collection of results e.g. The original sampling may be coring, a sub-sampling to collect a coal sample from that core may be the relevant sample of interest, and several steps of sample processing may result in samples for analysis whose results relate back to the original coal from core.  
 * The type of exploration work.   
 * ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
-* Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
+* Examples: seismic survey, seismic reprocessing, geochemical survey, gravity survey, magnetotelluric survey, coal quality sample processing.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
@@ -61,14 +68,16 @@ We seek to understand the geological properties of a geological or administrativ
 #### Sample
 * The enduring extract that the survey of the a produces.  
 * Synonymous with ```specimen```.
-*	The sample is a representative part a whole geological feature.
-* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, or **duplicates** - identical samples.
+*	The sample is a representative part of a feature of interest.
+* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
+* Samples may be physical samples or abstract extracts such as pictures, digital information etc.
 * Examples: drill core, drill cuttings, soil sample, hand specimen, water, photograph, LAS file.
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
 * An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature.
+* Observations differ from sampling in that sampling yields a sample, whereas an observation yields a qualitative or quantitative result.
 * Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
@@ -82,6 +91,10 @@ We seek to understand the geological properties of a geological or administrativ
   - Petrophysical log measurements e.g. gamma, density, resistivitiy.
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
+
+#### Practical Usage
+* Conceptually each data point in a LAS file is a result, however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result.  
+* While theoretically there is a coherent chain from Ultimate Feature to Result it may be implicit, misleading, or superfluous to include each element e.g. a strike and dip measurement on an outcrop is an observation, but recording it as a survey of measurements recorded with a sample as a written notebook is most likely superfluous, of little value, unlikely to reference a findable object, and merely uses space in a catalogue and data store. 
 
 ## Geological Properties Database conceptual data model
 <p align="center">
