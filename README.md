@@ -201,13 +201,37 @@ Figure 1: Geological Properties Conceptual Model</p>
 > Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
 ## Geological Properties Database vocabularies
-- [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
-- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
-- [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
+- Geological properties type
+- [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
+- Geoadmin feature status
+- Geoadmin feature relationship type
+- Site types
+- Site relationship
+- Site detail type
+- Borehole depth datum
+- Borehole design
+- Borhole origin circumstance
+- Borehole drilling method
+- Wellbore association
+- Survey type
+- Survey method
 - [Survey status](https://vocabs.gsq.digital/vocabulary/survey-status)
-- Observation types (new)
-- Site types (new)
-- Survey types (new)
+- Survey detail type
+- Sample type
+- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
+- IGSN code
+- Sample alias type
+- Sample material type
+- Sample relationship type
+- Sample facility
+- Sample location status
+- Sample detail type
+- Observation type
+- Sample preparation
+- Observation detail type
+- Result type
+- Unit of measure
+- [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
 - [Sample type](https://vocabs.ands.org.au/viewById/185)  
