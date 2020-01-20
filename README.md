@@ -209,21 +209,21 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Site relationship
 - Site detail type
 - Borehole depth datum
-- Borehole design
-- Borhole origin circumstance
+- [Borehole design](http://linked.data.gov.au/def/borehole-inclination)
+- [Borhole origin circumstance](http://linked.data.gov.au/def/borehole-start)
 - Borehole drilling method
 - Wellbore association
 - Survey type
 - Survey method
-- [Survey status](https://vocabs.gsq.digital/vocabulary/survey-status)
+- [Survey status](http://linked.data.gov.au/def/mining-survey-status)
 - Survey detail type
 - Sample type
-- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
-- IGSN code
+- [Sample method](http://linked.data.gov.au/def/sampling-method)
+- [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - Sample alias type
 - Sample material type
 - Sample relationship type
-- Sample facility
+- Sample facility (Zillmere or Mt Isa)
 - Sample location status
 - Sample detail type
 - Observation type
@@ -231,7 +231,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Observation detail type
 - Result type
 - Unit of measure
-- [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
+- [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
 - [Sample type](https://vocabs.ands.org.au/viewById/185)  
