@@ -208,6 +208,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Site types
 - Site relationship
 - Site detail type
+- [Borehole Purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - Borehole depth datum
 - [Borehole design](http://linked.data.gov.au/def/borehole-inclination)
 - [Borhole origin circumstance](http://linked.data.gov.au/def/borehole-start)
