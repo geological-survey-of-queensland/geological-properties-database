@@ -210,7 +210,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Site detail type
 - [Borehole Purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - Borehole depth datum
-- [Borehole design](http://linked.data.gov.au/def/borehole-inclination)
+- [Borehole design](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-design.ttl)
 - [Borhole origin circumstance](http://linked.data.gov.au/def/borehole-start)
 - Borehole drilling method
 - Wellbore association
