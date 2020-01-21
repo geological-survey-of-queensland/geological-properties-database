@@ -206,16 +206,17 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Geoadmin feature status
 - Geoadmin feature relationship type
 - Site types
-- Site relationship
 - Site detail type
+- [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
 - [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
+- [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl) _not yet available_
 - [Borehole depth datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-depth-datum.ttl)
 - [Borehole design](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-design.ttl)
 - [Borhole origin circumstance](http://catalogue.linked.data.gov.au/index.php/resource/51)
 - [Borehole drilling method](https://vocabs.ands.org.au/viewById/124)
 - [Borehole status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status.ttl)
+- [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
 - [Project class](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/project-class.ttl)
-- Wellbore association
 - Survey type
 - Survey method
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
