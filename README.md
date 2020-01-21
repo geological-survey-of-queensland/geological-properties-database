@@ -213,7 +213,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole design](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-design.ttl)
 - [Borhole origin circumstance](http://catalogue.linked.data.gov.au/index.php/resource/51)
 - [Borehole drilling method](https://vocabs.ands.org.au/viewById/124)
-- [Borehole status]((https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status.ttl)
+- [Borehole status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status.ttl)
 - Wellbore association
 - Survey type
 - Survey method
