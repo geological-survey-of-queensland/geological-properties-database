@@ -51,24 +51,27 @@ We seek to understand the geological properties of a geological or administrativ
 
 #### Survey
 * The one-off event examining a geological or administrative feature. 
+* Surveys are activities that produce samples.
 * The type of exploration work.   
-* ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
+* ```Survey``` is synonymous with the term ```Sampling```, and with the term ```Project``` in the geochemistry dataset. 
 * Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
-* The enduring extract that the survey of the a produces.  
+* The enduring extract that a survey produces.  
 * Synonymous with ```specimen```.
 *	The sample is a representative part a whole geological feature.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, or **duplicates** - identical samples.
+* A sample may be surveyed to produce a new sample or sub-sample e.g. An image (sample) may be the produced from an aerial photographic survey, each pixel within that image is a sub-sample.
 * Examples: drill core, drill cuttings, soil sample, hand specimen, water, photograph, LAS file.
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
-* An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature.
+* An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature, a site, or a sample.
+* Observations are activities that produce results.
 * Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
