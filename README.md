@@ -211,6 +211,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole depth datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-depth-datum.ttl)
+- [Depth reference datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/depth-reference-datum.ttl) - To supercede Borehole Depth Datum. To use for any depth or elevation reference.
 - [Borehole design](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-design.ttl)
 - [Borhole origin circumstance](http://catalogue.linked.data.gov.au/index.php/resource/51)
 - [Borehole drilling method](https://vocabs.ands.org.au/viewById/124)
