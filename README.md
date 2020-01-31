@@ -223,6 +223,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Project class](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/project-class.ttl)
 - [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
+- [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - Survey type
 - Survey method
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
