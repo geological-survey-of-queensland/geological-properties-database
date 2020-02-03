@@ -208,9 +208,13 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - Geoadmin feature status
 - Geoadmin feature relationship type
+- Geoadmin feature alias detail
 - Site types
 - Site detail type
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
+- Site alias detail
+- Site alias source
+- Site status
 - [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole depth datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-depth-datum.ttl)
@@ -222,6 +226,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
 - [Project class](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/project-class.ttl)
 - [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
+- Geometry type
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - Survey type
