@@ -207,14 +207,10 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Geological properties type
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - Geoadmin feature status
-- Geoadmin feature relationship type
-- Geoadmin feature alias detail
 - Site types
-- Site detail type
+- Site detail type _Need Clarification_
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
-- Site alias detail
-- Site alias source
-- Site status
+- Site status _Need Clarification_
 - [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole depth datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-depth-datum.ttl)
@@ -226,27 +222,26 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
 - [Project class](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/project-class.ttl)
 - [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
-- Geometry type
+- Geometry type _file type list?_
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - Survey type
 - Survey method
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
-- Survey detail type
+- Survey detail type _Need clarification_
 - Sample type
 - [Sample method](http://linked.data.gov.au/def/sampling-method)
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
-- Sample alias type
 - Sample material type
 - Sample relationship type
 - Sample facility (Zillmere or Mt Isa)
-- Sample location status
-- Sample detail type
+- Sample location status _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
+- Sample detail type _Need clarification_
 - Observation type
 - Sample preparation
-- Observation detail type
+- Observation detail type _Need clarification_
 - Result type
-- Unit of measure
+- Unit of measure _Integration with QUDT vocabulary to be done by NC_
 - [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
