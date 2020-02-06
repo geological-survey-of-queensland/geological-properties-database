@@ -207,6 +207,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Geological properties type
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - Geoadmin feature status
+- Geoadmin feature relationship type
 - Site types
 - Site detail type _Need Clarification_
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
@@ -234,9 +235,11 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - Sample material type
 - Sample relationship type
+- Sample alias type
 - Sample facility (Zillmere or Mt Isa)
 - Sample location status _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
 - Sample detail type _Need clarification_
+- Sample location detail type
 - Observation type
 - Sample preparation
 - Observation detail type _Need clarification_
