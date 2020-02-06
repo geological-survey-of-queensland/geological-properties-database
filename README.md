@@ -228,6 +228,8 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - [Survey type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/survey-type.ttl)
 - Survey method
+ - Where 'survey_type = seismic' use [seismic_sampling_method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/seismic-sampling-method.ttl)
+ - Other surveys use [survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
 - Survey detail type -  _Need clarification_
 - Sample type
