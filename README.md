@@ -204,14 +204,14 @@ Figure 1: Geological Properties Conceptual Model</p>
 > Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
 ## Geological Properties Database vocabularies
-- Geological properties type _to be developed in future release_
+- Geological properties type -  _to be developed in future release_
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - Geoadmin feature status
 - Geoadmin feature relationship type
 - Site types
-- Site detail type _Need Clarification_
+- Site detail type -  _Need Clarification_
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
-- Site status _Need Clarification_
+- Site status -  _Need Clarification_
 - [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole depth datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-depth-datum.ttl)
@@ -223,28 +223,28 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
 - [Project class](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/project-class.ttl)
 - [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
-- Geometry type _file type list?_
+- Geometry type -  _file type list?_
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - Survey type
 - Survey method
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
-- Survey detail type _Need clarification_
+- Survey detail type -  _Need clarification_
 - Sample type
 - [Sample method](http://linked.data.gov.au/def/sampling-method)
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - Sample material type
 - Sample relationship type
 - Sample alias type
-- Sample facility (Zillmere or Mt Isa)
-- Sample location status _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
-- Sample detail type _Need clarification_
+- Sample facility -  (Zillmere or Mt Isa)
+- Sample location status -  _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
+- Sample detail type -  _Need clarification_
 - Sample location detail type
 - Observation type
 - Sample preparation
-- Observation detail type _Need clarification_
+- Observation detail type -  _Need clarification_
 - Result type
-- Unit of measure _Integration with QUDT vocabulary to be done by NC_
+- Unit of measure -  _Integration with QUDT vocabulary to be done by NC_
 - [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
