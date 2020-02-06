@@ -228,8 +228,8 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - [Survey type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/survey-type.ttl)
 - Survey method
- - Where 'survey_type = seismic' use [seismic_sampling_method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/seismic-sampling-method.ttl)
- - Other surveys use [survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)
+  - Where Survey_Type==seismic use [seismic_sampling_method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/seismic-sampling-method.ttl)
+  - else use [survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
 - Survey detail type -  _Need clarification_
 - Sample type
@@ -259,7 +259,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
 - [Analysis](https://vocabs.ands.org.au/viewById/189)
 - [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
-- [NEII Observation Method](https://vocabs.ands.org.au/viewById/167)
+- [NEII Observation Method](https://vocabs.ands.org.au/viewById/167
 
 
 ## Mapping to MERLIN tables
