@@ -204,7 +204,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 > Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
 ## Geological Properties Database vocabularies
-- Geological properties type
+- Geological properties type _to be developed in future release_
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - Geoadmin feature status
 - Geoadmin feature relationship type
