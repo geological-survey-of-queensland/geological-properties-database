@@ -206,9 +206,9 @@ Figure 1: Geological Properties Conceptual Model</p>
 ## Geological Properties Database vocabularies
 - Geological properties type -  _to be developed in future release_
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
-- [Geoadmin feature status] aka Permit Status(https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/qld-resource-permit-status.ttl)
+- [Geoadmin feature status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/qld-resource-permit-status.ttl) aka Permit Status
 - Geoadmin feature relationship type
-- Site types
+- [Site types](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sites.ttl)
 - Site detail type -  _Need Clarification_
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
 - Site status -  _Need Clarification_
