@@ -237,7 +237,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - Sample material type
 - Sample relationship type
-- Sample facility -  (Zillmere or Mt Isa)
+- [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
 - Sample location status -  _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
 - Sample detail type -  _Need clarification_
 - Sample location detail type
