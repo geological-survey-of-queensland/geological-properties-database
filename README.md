@@ -240,12 +240,12 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
 - Sample location status -  _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
 - Sample detail type -  _Need clarification_
-- Sample location detail type
+- [Sample location detail type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-location-details.ttl)
 - Observation type
 - Sample preparation
 - Observation detail type -  _Need clarification_
 - Result type
-- Unit of measure -  _Integration with QUDT vocabulary to be done by NC_
+- Unit of measure -  _Integration with QUDT vocabulary to be done by NC_ [temporary vocab](https://github.com/qudt/qudt-public-repo/raw/master/vocab/unit/VOCAB_QUDT-UNITS-ALL-v2.1.ttl)
 - [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
