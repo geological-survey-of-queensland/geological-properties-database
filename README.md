@@ -207,11 +207,11 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Geological properties type -  _to be developed in future release_
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - [Geoadmin feature status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/qld-resource-permit-status.ttl) aka Permit Status
-- Geoadmin feature relationship type
+- Geoadmin feature relationship type _use site_relationship? what else is needed?_
 - [Site types](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sites.ttl)
 - Site detail type -  _Need Clarification_
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
-- Site status -  _Need Clarification_
+- [Site status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/site-status.ttl)
 - [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
 - [Borehole depth datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-depth-datum.ttl)
@@ -232,29 +232,28 @@ Figure 1: Geological Properties Conceptual Model</p>
   - else use [survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
 - Survey detail type -  _Need clarification_
-- Sample type
+- [Sample type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/) _need to reconcile with [Sample Type](https://vocabs.ands.org.au/viewById/185)_
 - [Sample method](http://linked.data.gov.au/def/sampling-method)
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
-- Sample material type
-- Sample relationship type
+- [Sample material type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-material.ttl)
+- Sample relationship type _further work and clarification needed_
 - [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
-- Sample location status -  _Need clarification. collected, awaiting send, in transit, received, in storage, lost?_
+- [Sample location status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-location-status.ttl)
 - Sample detail type -  _Need clarification_
 - [Sample location detail type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-location-details.ttl)
-- Observation type
-- Sample preparation
+- [Observation type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/observation-type.ttl)
+- [Sample preparation](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-preparation.ttl)
 - Observation detail type -  _Need clarification_
-- Result type
+- [Result type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/result-type.ttl)
+- Observation detail type -  _Need clarification_
 - Unit of measure -  _Integration with QUDT vocabulary to be done by NC_ [temporary vocab](https://github.com/qudt/qudt-public-repo/raw/master/vocab/unit/VOCAB_QUDT-UNITS-ALL-v2.1.ttl)
 - [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
 - [Sample type](https://vocabs.ands.org.au/viewById/185)  
-- [IGSN Codelist](https://vocabs.ands.org.au/viewById/188)
 - [Observation Method](https://vocabs.ands.org.au/viewById/89)
 - [Exploration Result](https://vocabs.ands.org.au/viewById/77)
 - [Sampling Method](https://vocabs.ands.org.au/viewById/195)
-- [Sample Type](https://vocabs.ands.org.au/viewById/185)
 - [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
 - [Analysis](https://vocabs.ands.org.au/viewById/189)
 - [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
