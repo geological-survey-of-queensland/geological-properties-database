@@ -232,7 +232,7 @@ Figure 1: Geological Properties Conceptual Model</p>
   - else use [survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
 - Survey detail type -  _Need clarification_
-- [Sample type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/) _need to reconcile with [Sample Type](https://vocabs.ands.org.au/viewById/185)_
+- [Sample type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-type.ttl) _need to reconcile with [Sample Type](https://vocabs.ands.org.au/viewById/185)_
 - [Sample method](http://linked.data.gov.au/def/sampling-method)
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - [Sample material type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-material.ttl)
