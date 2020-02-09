@@ -236,7 +236,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Sample method](http://linked.data.gov.au/def/sampling-method)
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - [Sample material type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-material.ttl)
-- Sample relationship type _further work and clarification needed_
+- Sample relationship type _further work and clarification needed. Same as site type + derivedFrom, collectedWith, contains (for composites),associate, twinOf_ 
 - [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
 - [Sample location status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-location-status.ttl)
 - Sample detail type -  _Need clarification_
