@@ -227,9 +227,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - [Survey type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/survey-type.ttl)
-- Survey method
-  - Where Survey_Type==seismic use [seismic_sampling_method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/seismic-sampling-method.ttl)
-  - else use [survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)
+- [Survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)_note:use "svymh:seismic-methods a skos:Collection ;" where survey_type==seismic
 - [Survey status](http://linked.data.gov.au/def/mining-survey-status)
 - Survey detail type -  _Need clarification_
 - [Sample type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-type.ttl) _need to reconcile with [Sample Type](https://vocabs.ands.org.au/viewById/185)_
@@ -245,7 +243,6 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Sample preparation](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-preparation.ttl)
 - Observation detail type -  _Need clarification_
 - [Result type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/result-type.ttl)
-- Observation detail type -  _Need clarification_
 - Unit of measure -  _Integration with QUDT vocabulary to be done by NC_ [temporary vocab](https://github.com/qudt/qudt-public-repo/raw/master/vocab/unit/VOCAB_QUDT-UNITS-ALL-v2.1.ttl)
 - [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
