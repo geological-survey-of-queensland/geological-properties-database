@@ -27,9 +27,18 @@ Figure 1: Geological properties data model</p>
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise of the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
 
-<p align="center">
-<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/SSOR_Examples.png" width="1120"><br>
-  
+## SSOR Examples
+|SOSA Category|Borehole|Geophysics|Geochemistry|
+|---|---|---|---|
+|Feature|Bowen Basin|Queensland|Mary Kathleen U Deposit|
+|Site|Well:<br>Fair Gully 1|Extent:<br>GSQ-Grav-2020-1| GSQ-2020 sampling campaign area<br>Sub-site: Field Site GSQ-S01 (-20.744088, 140.013291)|
+|Survey|Wireline:<br>FG1-Run-200|Survey:<br>GSQ-Grav-2020-1|Sample collection:<br>GSQ-S01|
+|Sample|LAS File:<br>Fair Gully 1 MAINLOG.las*|Gravity Intensity Grid:<br>GSQ2020-A1 GravAn.gri*<br>Sub-Sample: Pixel (25736,4646)|Handsample:<br>HS035<br>-(processing: crush, split, seive)-><br>Sub-Sample: HS035-A1C-S80|
+|Observation|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
+|Result|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
+
+*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the GeoProperties database to the survey or sample level with the array data preserved in their original file formats as associated DCAT resources.
+
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
