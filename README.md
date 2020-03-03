@@ -37,7 +37,7 @@ We seek to understand the geological properties of a geological or administrativ
 |Observation|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
 |Result|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
 
-*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the GeoProperties database to the survey or sample level with the array data preserved in their original file formats as associated DCAT resources.
+*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the Geological Properties Database to the survey or sample level with the array data preserved in their original file formats as associated dataset resources.
 
 ### Definitions
 #### Geological property
