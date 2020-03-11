@@ -230,7 +230,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole drilling method](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-drilling-method.ttl)
 - [Borehole status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status.ttl)
 - [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
-- [Project class](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/project-class.ttl)
+- [Resource Project Lifecycle and Borehole Class](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/resource-project-lifecycle.ttl)
 - [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
 - Geometry type -  _file type list?_
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
