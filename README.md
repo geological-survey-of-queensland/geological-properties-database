@@ -53,7 +53,7 @@ We seek to understand the geological properties of a geological or administrativ
 SOSA has a concept of an observation collection (what we call a survey). This collection can have one or more members. e.g. A Geophysical Observation Collection can have a gravity observation and a radiometric observation. See https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection
 
 <p align="center">
-<img src="https://www.w3.org/TR/vocab-ssn-ext/images/observation-collection.png" width="75%"><br>
+<img src="https://www.w3.org/TR/vocab-ssn-ext/images/observation-collection.png" width="50%"><br>
 Model for an observation-collection, in which the collection may carry one or more of the properties of its members if they have a shared value for all members</p>
 
 ### Aligning terminology between SOSA and Geoproperties
