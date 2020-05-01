@@ -50,7 +50,7 @@ We seek to understand the geological properties of a geological or administrativ
 
 ## Understanding Surveys vs Observations
 
-SOSA has a concept of an observation collection (what we call a survey). This collection can have one or more members. e.g. A Geophysical Observation Collection can have a gravity observation and a radiometric observation. See https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection
+SOSA has a concept of an observation collection (what we call a survey). This collection can have one or more members. e.g. A Geophysical Observation Collection can have a magnetic observation and a radiometric observation. See https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection
 
 <p align="center">
 <img src="https://www.w3.org/TR/vocab-ssn-ext/images/observation-collection.png" width="50%"><br>
@@ -72,8 +72,8 @@ Model for an observation-collection, in which the collection may carry one or mo
 | Seismic     | Ground        | 2D Seismic           | Vibroseis          | Geophone make, model         |
 | Seismic     | Marine        | 3D Seismic           | Air Gun            | Air Gun make model           |
 | Geophysics  | Airborne      | Electromagnetic      | VTEM               | VTEM instrument make model   |
-| Geophysics  | Ground        | Electromagnetic      | SkyTEM             | SkyTEM instrument make model |
-| Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Helifalcon                   |
+| Geophysics  | Ground        | Electromagnetic      | Moving Loop EM     | Moving Loop EM make model    |
+| Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Einstein                     |
 | Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
 
 ### Definitions
