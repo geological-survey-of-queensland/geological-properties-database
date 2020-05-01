@@ -6,7 +6,7 @@ GSQ creates, collects and provides geoscience data, information and advice on mi
 
 The GSQ seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
 
-## Important - Semantic Sensor Network Ontology!
+## Important! - Semantic Sensor Network Ontology (SOSA)
 The Geoproperties Database is based on the SOSA ontology. If you understand this ontology, you will understand geoproperties.
 
 The Semantic Sensor Network (SSN) ontology https://www.w3.org/TR/vocab-ssn/ is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. 
