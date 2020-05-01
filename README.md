@@ -97,9 +97,8 @@ Model for an observation-collection, in which the collection may carry one or mo
 
 #### Survey
 * The one-off event examining a geological or administrative feature. 
-* Surveys are activities that produce samples.
-* The type of exploration work.   
-* ```Survey``` is synonymous with the term ```Sampling```, and with the term ```Project``` in the geochemistry dataset. 
+* The type of exploration work that produces samples or observations.   
+* ```Survey``` is synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset. 
 * Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
