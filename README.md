@@ -6,6 +6,15 @@ GSQ creates, collects and provides geoscience data, information and advice on mi
 
 The GSQ seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
 
+## Important - Semantic Sensor Network Ontology!
+The Geoproperties Database is based on the SOSA ontology. If you understand this ontology, you will understand geoproperties.
+
+The Semantic Sensor Network (SSN) ontology https://www.w3.org/TR/vocab-ssn/ is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. 
+
+SSN follows a horizontal and vertical modularization architecture by including a lightweight but self-contained core ontology called SOSA (Sensor, Observation, Sample, and Actuator) for its elementary classes and properties. 
+
+With their different scope and different degrees of axiomatization, SSN and SOSA are able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things.
+
 ## The Geological Properties Database
 The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
 
@@ -38,6 +47,34 @@ We seek to understand the geological properties of a geological or administrativ
 |Result|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
 
 *array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the Geological Properties Database to the survey or sample level with the array data preserved in their original file formats as associated dataset resources.
+
+## Understanding Surveys vs Observations
+
+SOSA has a concept of an observation collection (what we call a survey). This collection can have one or more members. e.g. A Geophysical Observation Collection can have a gravity observation and a radiometric observation. See https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection
+
+<p align="center">
+<img src="https://www.w3.org/TR/vocab-ssn-ext/images/observation-collection.png" width="75%"><br>
+Model for an observation-collection, in which the collection may carry one or more of the properties of its members if they have a shared value for all members</p>
+
+### Aligning terminology between SOSA and Geoproperties
+
+| SOSA                   | Geoprops           |
+|------------------------|--------------------|
+| Observation Collection | Survey             |
+| Observation            | Observation Type   |
+| Procedure              | Observation Method |
+| Sensor                 | Instrument         |
+
+### Example mapping
+
+| Survey Type | Survey Method | Observation Type     | Observation Method | Observation Instrument       |
+|-------------|---------------|----------------------|--------------------|------------------------------|
+| Seismic     | Ground        | 2D Seismic           | Vibroseis          | Geophone make, model         |
+| Seismic     | Marine        | 3D Seismic           | Air Gun            | Air Gun make model           |
+| Geophysics  | Airborne      | Electromagnetic      | VTEM               | VTEM instrument make model   |
+| Geophysics  | Ground        | Electromagnetic      | SkyTEM             | SkyTEM instrument make model |
+| Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Helifalcon                   |
+| Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
 
 ### Definitions
 #### Geological property
