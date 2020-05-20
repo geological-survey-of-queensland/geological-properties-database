@@ -92,14 +92,14 @@ Model for an observation-collection, in which the collection may carry one or mo
 * A location within, or wholly encompassing, a geological or administrative feature.  
 * Where a survey is undertaken.
 * A site may be a component of a larger site.
-* Examples: outcrop, borehole, stream, seismic line, seismic shot-point.
+* Examples: outcrop, borehole, stream, mine, alluvial site.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
 * The one-off event examining a geological or administrative feature. 
 * The type of exploration work that produces samples or observations.   
 * ```Survey``` is synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset. 
-* Examples: seismic survey, geochemical survey, gravity survey, magnetotelluric survey.
+* Examples: seismic survey, geochemical survey, geophysical survey, petrophysical survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
@@ -117,7 +117,8 @@ Model for an observation-collection, in which the collection may carry one or mo
 #### Observation
 * An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature, a site, or a sample.
 * Observations are activities that produce results.
-* Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
+* Observations may be the observation of the physical limits of an interval
+* Examples: physical properties, hyperspectral scanning, gravity, stratigraphic interval, mineralogical components
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
@@ -252,7 +253,6 @@ Figure 1: Geological Properties Conceptual Model</p>
 - Geological properties type -  _to be developed in future release_
 - [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
 - [Geoadmin feature status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/qld-resource-permit-status.ttl) aka Permit Status
-- Geoadmin feature relationship type _use site_relationship? what else is needed?_
 - [Site types](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sites.ttl)
 - Site detail type -  _Need Clarification_
 - [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
@@ -267,7 +267,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
 - [Resource Project Lifecycle and Borehole Class](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/resource-project-lifecycle.ttl)
 - [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
-- Geometry type -  _file type list?_
+- [Geometry Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/geometry-roles.ttl)
 - [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
 - [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
 - [Survey type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/survey-type.ttl)
@@ -278,7 +278,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Sample method](http://linked.data.gov.au/def/sampling-method)
 - [IGSN code](https://vocabs.ands.org.au/viewById/188)
 - [Sample material type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-material.ttl)
-- Sample relationship type _further work and clarification needed. Same as site type + derivedFrom, collectedWith, contains (for composites),associate, twinOf_ 
+- [Sample relationship type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-relationship.ttl)
 - [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
 - [Sample location status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-location-status.ttl)
 - Sample detail type -  _Need clarification_
@@ -287,7 +287,7 @@ Figure 1: Geological Properties Conceptual Model</p>
 - [Sample preparation](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-preparation.ttl)
 - Observation detail type -  _Need clarification_
 - [Result type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/result-type.ttl)
-- Unit of measure -  _Integration with QUDT vocabulary to be done by NC_ [temporary vocab](https://github.com/qudt/qudt-public-repo/raw/master/vocab/unit/VOCAB_QUDT-UNITS-ALL-v2.1.ttl)
+- [Unit of measure](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qudt-uom.ttl)
 - [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
