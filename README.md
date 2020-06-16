@@ -81,23 +81,28 @@ Model for an observation-collection, in which the collection may carry one or mo
 * The observable or measureable properties of a geological or administrative feature.  
 * Examples: mineralogy, hydrocarbon properties, water properties, stratigraphy, engineering data.  
 
-#### Geological or administrative feature
+#### Ultimate Feature of Interest - Geological or administrative features
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
 * Administrative features are spatial features that are defined and managed by regulatory agencies.
-* Examples: basin, province, trough, craton, orogen, permit, sub-block, resource accumulation.
+* Ultimate features of interest are entities that are discrete, complete, and internally coherent. 
+* Ultimate features may be components of larger features as part of a set, where each is an independent discrete entity e.g. formations within a basin.  
+* ultFeature componentOf ultFeature
+* Examples: basin, province, trough, craton, orogen, formation, permit, sub-block, resource accumulation.
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
 * See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
-#### Site
-* A location within, or wholly encompassing, a geological or administrative feature.  
-* Where a survey is undertaken.
+#### Proximate Feature of Interest - Sites
+* An entity or location within, or wholly encompassing, a feature that acts as a proxy to represent a complete (ultimate) feature.  
+* A Feature of Interest is proximate when it represents a larger feature, as opposed to being a discrete component of a larger feature. e.g. an outcrop can be examined as a representitive of a formation, whereas a formation does not represent a whole basin but is a component of it.
+* Where a sampling is undertaken, but the sampling geometry and site geometry do not necessarily have to be equivalent.
 * A site may be a component of a larger site.
+* proxFeature representativeOf ultFeature
 * Examples: outcrop, borehole, stream, mine, alluvial site.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
 * The one-off event examining a geological or administrative feature. 
-* The type of exploration work that produces samples or observations.   
+* The type of exploration, assessment, or processing work that produces samples or observations.   
 * ```Survey``` is synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset. 
 * Examples: seismic survey, geochemical survey, geophysical survey, petrophysical survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
@@ -105,32 +110,40 @@ Model for an observation-collection, in which the collection may carry one or mo
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
-* The enduring extract that a survey produces.  
-* Synonymous with ```specimen```.
-*	The sample is a representative part a whole geological feature.
-* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, or **duplicates** - identical samples.
+
+* An enduring artefact produced by a survey. 
+* Synonymous with ```specimen``` for physical artefacts.
+*	The sample is a representative part of a feature of interest.
+* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
 * A sample may be surveyed to produce a new sample or sub-sample e.g. An image (sample) may be the produced from an aerial photographic survey, each pixel within that image is a sub-sample.
-* Examples: drill core, drill cuttings, soil sample, hand specimen, water, photograph, LAS file.
+* Examples: drill core, drill cuttings, soil sample, hand specimens, water, photograph, LAS file.
+
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
-* An act of carrying out an observation using a _procedure_ to measure, estimate or calculate a value of a geological or administrative feature, a site, or a sample.
-* Observations are activities that produce results.
+* An act of carrying out an observation using a _procedure_ to measure, estimate, calculate a value of, or describe a feature, site or sample.
+* Observations differ from sampling in that sampling yields an artefact, whereas an observation yields a qualitative or quantitative result.
 * Observations may be the observation of the physical limits of an interval
-* Examples: physical properties, hyperspectral scanning, gravity, stratigraphic interval, mineralogical components
+* Examples: physical properties, hyperspectral scanning, gravity, stratigraphic interval, inductively coupled plasma spectrometry, mineralogical components
+
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
 #### Result
-* The result of the observation performed on a sample, stored as a value together with the unit.  
+* The result of the observation performed on a sample, stored as a description or a value and unit of measure.  
 * Examples: 
   - Physical properites, e.g. concentration, mass, temperature
   - Petrographic descriptions
   - Geophysical measurements e.g. gravity, magnetic field strength
-  - Petrophysical log measurements e.g. gamma, density, resistivitiy.
+  - Petrophysical log measurements e.g. gamma, density, resistivity.
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
+
+#### Practical Usage
+* Conceptually each data point in a LAS file is a result (and a LAS file is a collection of samples), however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result.  
+* While theoretically there is a coherent chain from Ultimate Feature to Result it may be implicit, misleading, or superfluous to include each element e.g. a strike and dip measurement on an outcrop is an observation, but recording it as a survey of measurements recorded with a sample as a written notebook is most likely superfluous, of little value, unlikely to reference a findable object, and merely uses space in a catalogue and data store. 
+* A seismic receiver location _is_ a site within a seismic line site, but in implementation the database will record lines and the receiver locations will remain within the referenced files (documents) or as sample locations.
 
 ## Geological Properties Database conceptual data model
 <p align="center">
