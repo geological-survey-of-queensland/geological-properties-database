@@ -6,6 +6,15 @@ GSQ creates, collects and provides geoscience data, information and advice on mi
 
 The GSQ seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
 
+## Important! - Semantic Sensor Network Ontology (SOSA)
+The Geoproperties Database is based on the SOSA ontology. If you understand this ontology, you will understand geoproperties.
+
+The Semantic Sensor Network (SSN) ontology https://www.w3.org/TR/vocab-ssn/ is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. 
+
+SSN follows a horizontal and vertical modularization architecture by including a lightweight but self-contained core ontology called SOSA (Sensor, Observation, Sample, and Actuator) for its elementary classes and properties. 
+
+With their different scope and different degrees of axiomatization, SSN and SOSA are able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things.
+
 ## The Geological Properties Database
 The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
 
@@ -27,9 +36,46 @@ Figure 1: Geological properties data model</p>
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise of the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
 
+## SSOR Examples
+|SOSA Category|Borehole|Geophysics|Geochemistry|
+|---|---|---|---|
+|Feature|Bowen Basin|Queensland|Mary Kathleen U Deposit|
+|Site|Well:<br>Fair Gully 1|Extent:<br>GSQ NWQ Gravity Survey 2020|Extent:<br>GSQ-2020 surface sampling campaign<br>Sub-site: Field Site GSQ-S01 (-20.744088, 140.013291)|
+|Survey|Wireline:<br>FG1-Run-200|Survey:<br>GSQ-Grav-2020-1|Sample collection:<br>GSQ-S01|
+|Sample|LAS File:<br>Fair Gully 1 MAINLOG.las*|Gravity Intensity Grid:<br>GSQ2020-A1 GravAn.gri*<br>Sub-Sample: Pixel (25736,4646)|Handsample:<br>HS035<br>-(processing: crush, split, seive)-><br>Sub-Sample: HS035-A1C-S80|
+|Observation|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
+|Result|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
+
+*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the Geological Properties Database to the survey or sample level with the array data preserved in their original file formats as associated dataset resources.
+
+## Understanding Surveys vs Observations
+
+SOSA has a concept of an observation collection (what we call a survey). This collection can have one or more members. e.g. A Geophysical Observation Collection can have a magnetic observation and a radiometric observation. See https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection
+
 <p align="center">
-<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/SSOR_Examples.png" width="1120"><br>
-  
+<img src="https://www.w3.org/TR/vocab-ssn-ext/images/observation-collection.png" width="50%"><br>
+Model for an observation-collection, in which the collection may carry one or more of the properties of its members if they have a shared value for all members</p>
+
+### Aligning terminology between SOSA and Geoproperties
+
+| SOSA                   | Geoprops           |
+|------------------------|--------------------|
+| Observation Collection | Survey             |
+| Observation            | Observation Type   |
+| Procedure              | Observation Method |
+| Sensor                 | Instrument         |
+
+### Example mapping
+
+| Survey Type | Survey Method | Observation Type     | Observation Method | Observation Instrument       |
+|-------------|---------------|----------------------|--------------------|------------------------------|
+| Seismic     | Ground        | 2D Seismic           | Vibroseis          | Geophone make, model         |
+| Seismic     | Marine        | 3D Seismic           | Air Gun            | Air Gun make model           |
+| Geophysics  | Airborne      | Electromagnetic      | VTEM               | VTEM instrument make model   |
+| Geophysics  | Ground        | Electromagnetic      | Moving Loop EM     | Moving Loop EM make model    |
+| Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Einstein                     |
+| Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
+
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.  
@@ -51,34 +97,36 @@ We seek to understand the geological properties of a geological or administrativ
 * Where a sampling is undertaken, but the sampling geometry and site geometry do not necessarily have to be equivalent.
 * A site may be a component of a larger site.
 * proxFeature representativeOf ultFeature
-* Examples: outcrop, borehole, stream, seismic line, seismic shot-point (see Practical Usage note below).
+* Examples: outcrop, borehole, stream, mine, alluvial site.
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
-#### Sampling - Survey, Activity, Process
-* The one-off event or process that produces a Sample. 
-* An act of Sampling carries out a procedure to create or transform one or more Samples.
-* In many cases there is a chain of samples and sub-samples created through iterative sampling. The sampling of a feature is commonly the original survey, and the sampling of samples is derivative sampling or processing. Any sub-sample in a chain may be an _originalSample_ relevant to a collection of results e.g. The original sampling may collecting core, a sub-sampling that collects a coal sample from that core may be the relevant originalSample for subsequent results, and several steps of sample processing may produce the sub-samples for analysis whose results are relevant to the original coal sample derived from core.  
-* The type of exploration, assessment, or processing work.   
-* ```Survey``` is synonymous with the term ```Project``` in the geochemistry dataset. 
-* Examples: seismic survey, seismic reprocessing, geochemical survey, gravity survey, magnetotelluric survey, coal quality sample processing.
+#### Survey
+* The one-off event examining a geological or administrative feature. 
+* The type of exploration, assessment, or processing work that produces samples or observations.   
+* ```Survey``` is synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset. 
+* Examples: seismic survey, geochemical survey, geophysical survey, petrophysical survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
-* The enduring artefact that sampling produces.  
+
+* An enduring artefact produced by a survey. 
 * Synonymous with ```specimen``` for physical artefacts.
 *	The sample is a representative part of a feature of interest.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
-* Samples may be physical samples or abstract artefacts such as pictures, digital information etc.
-* Examples: drill core, drill cuttings, soil samples, hand specimens, water, photographs, LAS files.
+* A sample may be surveyed to produce a new sample or sub-sample e.g. An image (sample) may be the produced from an aerial photographic survey, each pixel within that image is a sub-sample.
+* Examples: drill core, drill cuttings, soil sample, hand specimens, water, photograph, LAS file.
+
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
-* An act of carrying out an observation using a _procedure_ to measure, estimate, derive a value of, or describe a feature.
+* An act of carrying out an observation using a _procedure_ to measure, estimate, calculate a value of, or describe a feature, site or sample.
 * Observations differ from sampling in that sampling yields an artefact, whereas an observation yields a qualitative or quantitative result.
-* Examples: field measurements, hyperspectral scanning, inductively coupled plasma spectrometry  
+* Observations may be the observation of the physical limits of an interval
+* Examples: physical properties, hyperspectral scanning, gravity, stratigraphic interval, inductively coupled plasma spectrometry, mineralogical components
+
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
@@ -215,25 +263,55 @@ Figure 1: Geological Properties Conceptual Model</p>
 > Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
 ## Geological Properties Database vocabularies
-- [Geoadmin features](https://vocabs.gsq.digital/vocabulary/gsq-features)
-- [Sample method](https://vocabs.gsq.digital/vocabulary/sampling-method)
-- [Data Access Rights](https://vocabs.gsq.digital/vocabulary/data-access-rights)
-- [Survey status](https://vocabs.gsq.digital/vocabulary/survey-status)
-- Observation types (new)
-- Site types (new)
-- Survey types (new)
+- Geological properties type -  _to be developed in future release_
+- [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
+- [Geoadmin feature status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/qld-resource-permit-status.ttl) aka Permit Status
+- [Site types](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sites.ttl)
+- Site detail type -  _Need Clarification_
+- [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
+- [Site status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/site-status.ttl)
+- [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
+- [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-sub-purpose.ttl)
+- [Depth reference datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/depth-reference-datum.ttl) - To supercede Borehole Depth Datum. To use for any depth or elevation reference.
+- [Borehole design](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-design.ttl)
+- [Borhole origin circumstance](http://catalogue.linked.data.gov.au/index.php/resource/51)
+- [Borehole drilling method](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-drilling-method.ttl)
+- [Borehole Status and Site Status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-status.ttl) _collections_ of borehole and minocc
+- [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
+- [Resource Project Lifecycle and Borehole Class](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/resource-project-lifecycle.ttl)
+- [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
+- [Geometry Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/geometry-roles.ttl)
+- [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
+- [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
+- [Survey type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/survey-type.ttl)
+- [Survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)_note:use "svymh:seismic-methods a skos:Collection ;" where survey_type==seismic
+- [Survey status](http://linked.data.gov.au/def/mining-survey-status)
+- Survey detail type -  _Need clarification_
+- [Sample type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-type.ttl) _need to reconcile with [Sample Type](https://vocabs.ands.org.au/viewById/185)_
+- [Sample method](http://linked.data.gov.au/def/sampling-method)
+- [IGSN code](https://vocabs.ands.org.au/viewById/188)
+- [Sample material type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-material.ttl)
+- [Sample relationship type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-relationship.ttl)
+- [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
+- [Sample location status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-location-status.ttl)
+- Sample detail type -  _Need clarification_
+- [Sample location detail type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-location-details.ttl)
+- [Observation type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/observation-type.ttl)
+- [Sample preparation](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-preparation.ttl)
+- Observation detail type -  _Need clarification_
+- [Result type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/result-type.ttl)
+- [Unit of measure](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qudt-uom.ttl)
+- [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
 
 ### Reference vocabs that may be used or harvested
 - [Sample type](https://vocabs.ands.org.au/viewById/185)  
-- [IGSN Codelist](https://vocabs.ands.org.au/viewById/188)
 - [Observation Method](https://vocabs.ands.org.au/viewById/89)
 - [Exploration Result](https://vocabs.ands.org.au/viewById/77)
 - [Sampling Method](https://vocabs.ands.org.au/viewById/195)
-- [Sample Type](https://vocabs.ands.org.au/viewById/185)
 - [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
 - [Analysis](https://vocabs.ands.org.au/viewById/189)
 - [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
-- [NEII Observation Method](https://vocabs.ands.org.au/viewById/167)
+- [NEII Observation Method](https://vocabs.ands.org.au/viewById/167
 
 
 ## Mapping to MERLIN tables
