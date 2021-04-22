@@ -34,7 +34,7 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 Figure 1: Geological properties data model</p>
 
 ### A plain English definition
-We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise of the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
+We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
 
 ## SSOR Examples
 |SOSA Category|Borehole|Geophysics|Geochemistry|
