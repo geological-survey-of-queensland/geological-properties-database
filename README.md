@@ -40,7 +40,7 @@ We seek to understand the geological properties of a geological or administrativ
 |SOSA Category|Borehole|Geophysics|Geochemistry|
 |---|---|---|---|
 |Feature|Bowen Basin|Queensland|Mary Kathleen U Deposit|
-|Site|Well:<br>Fair Gully 1|Extent:<br>GSQ NWQ Gravity Survey 2020|Extent:<br>GSQ-2020 surface sampling campaign<br>Sub-site: Field Site GSQ-S01 (-20.744088, 140.013291)|
+|Site|Well:<br>Fair Gully 1|Extent:<br>GSQ NWQ Gravity Survey 2020|Field Site GSQ-S01 (-20.744088, 140.013291)|
 |Survey|Wireline:<br>FG1-Run-200|Survey:<br>GSQ-Grav-2020-1|Sample collection:<br>GSQ-S01|
 |Sample|LAS File:<br>Fair Gully 1 MAINLOG.las*|Gravity Intensity Grid:<br>GSQ2020-A1 GravAn.gri*<br>Sub-Sample: Pixel (25736,4646)|Handsample:<br>HS035<br>-(processing: crush, split, seive)-><br>Sub-Sample: HS035-A1C-S80|
 |Observation|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
