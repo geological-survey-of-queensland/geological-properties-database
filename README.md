@@ -46,7 +46,7 @@ We seek to understand the geological properties of a geological or administrativ
 |Observation|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
 |Result|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
 
-*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the Geological Properties Database to the survey or sample level with the array data preserved in their original file formats as associated dataset resources.
+*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the Geological Properties Database to the survey or sample level with the array data preserved in their original file formats as associated dataset resources. For some use cases, the Wireline 'Survey' may not be important in isolation, and therefore may be represented as a resource attached to a borehole site in its native LAS or DLIS format.
 
 ## Understanding Surveys vs Observations
 
@@ -102,8 +102,10 @@ Model for an observation-collection, in which the collection may carry one or mo
 
 #### Survey
 * The one-off event examining a geological or administrative feature. 
-* The type of exploration, assessment, or processing work that produces samples or observations.   
-* ```Survey``` is synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset. 
+* The type of exploration, assessment, or processing work that produces samples or observations.
+* A survey is a group activities (actuations and/or sampling and/or observations), that occur together and have a defined relationship. 
+* ```Survey``` is imperfectly synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset.
+* A survey as a broad project may have sub-surveys.
 * Examples: seismic survey, geochemical survey, geophysical survey, petrophysical survey.
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
@@ -124,7 +126,7 @@ Model for an observation-collection, in which the collection may carry one or mo
 #### Observation
 * An act of carrying out an observation using a _procedure_ to measure, estimate, calculate a value of, or describe a feature, site or sample.
 * Observations differ from sampling in that sampling yields an artefact, whereas an observation yields a qualitative or quantitative result.
-* Observations may be the observation of the physical limits of an interval
+* Observations may be the observation of the physical limits of an interval.
 * Examples: physical properties, hyperspectral scanning, gravity, stratigraphic interval, inductively coupled plasma spectrometry, mineralogical components
 
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
@@ -141,9 +143,11 @@ Model for an observation-collection, in which the collection may carry one or mo
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
 #### Practical Usage
-* Conceptually each data point in a LAS file is a result (and a LAS file is a collection of samples), however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result.  
+* Conceptually each data point in a LAS file is a result (and a LAS file is a collection of samples), however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result, or to be linked as a resource at the site level.  
 * While theoretically there is a coherent chain from Ultimate Feature to Result it may be implicit, misleading, or superfluous to include each element e.g. a strike and dip measurement on an outcrop is an observation, but recording it as a survey of measurements recorded with a sample as a written notebook is most likely superfluous, of little value, unlikely to reference a findable object, and merely uses space in a catalogue and data store. 
 * A seismic receiver location _is_ a site within a seismic line site, but in implementation the database will record lines and the receiver locations will remain within the referenced files (documents) or as sample locations.
+* Surveys as a collection of activities, and observations as activities that produce results, are complementary. e.g. a Seismic Survey includes the on-ground activities of setting up shotpoints and receivers, data capture, processing etc, a 2D or 3D seismic observation is the component of that survey that produces the data artefacts such as SEG-D.
+* Each processing step of a sample to the point of analysis can be represented as a chain of sub-samples leading back to an ultimate sample of interest. However commonly, only the original sample and the fully processed sample that that is analysed need to be represented. The full chain of processing can be recorded as a document (e.g. JSON, or laboratory report PDF) that is associated with the processed sample.
 
 ## Geological Properties Database conceptual data model
 <p align="center">
