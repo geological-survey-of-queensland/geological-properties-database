@@ -448,12 +448,20 @@ This code repository's content are licensed under the [Creative Commons Attribut
 *System owner*:  
 **Mark Gordon**  
 Geological Survey of Queensland  
-Department of Natural Resources, Mines and Energy  
+Department of Resources
 Brisbane, QLD, Australia  
-<mark.gordon@dnrme.qld.gov.au>  
+<mark.gordon@resources.qld.gov.au>  
 
 *Author*:  
 **David Crosswell**  
 Enterprise Architect  
 Cross-Lateral Enterprises  
 <https://crosslateral.com.au>  
+
+*Contributor*:  
+**Vance Kelly**
+Principal Data Manager
+Geological Survey of Queensland 
+Department of Resources
+Brisbane, QLD, Australia  
+<vance.kelly@resources.qld.gov.au>   
