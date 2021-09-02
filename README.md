@@ -78,8 +78,9 @@ Model for an observation-collection, in which the collection may carry one or mo
 
 ### Definitions
 #### Geological property
-* The observable or measureable properties of a geological or administrative feature.  
-* Examples: mineralogy, hydrocarbon properties, water properties, stratigraphy, engineering data.  
+* The observable or measureable properties of a geological or administrative feature.
+* 
+* Examples: mineralogy, hydrocarbon potential, hydrological properties, stratigraphy, geologic age.  
 
 #### Ultimate Feature of Interest - Geological or administrative features
 * Geological features have properties that are of interest for commercial, environmental and societal reasons.  
@@ -92,7 +93,7 @@ Model for an observation-collection, in which the collection may carry one or mo
 * See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
 #### Proximate Feature of Interest - Sites
-* An entity or location within, or wholly encompassing, a feature that acts as a proxy to represent a complete (ultimate) feature.  
+* An entity or location within, wholly encompassing, or intersecting an ultimate feature that acts as a proxy to represent that complete (ultimate) feature.  
 * A Feature of Interest is proximate when it represents a larger feature, as opposed to being a discrete component of a larger feature. e.g. an outcrop can be examined as a representitive of a formation, whereas a formation does not represent a whole basin but is a component of it.
 * Where a sampling is undertaken, but the sampling geometry and site geometry do not necessarily have to be equivalent.
 * A site may be a component of a larger site.
