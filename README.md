@@ -79,7 +79,7 @@ Model for an observation-collection, in which the collection may carry one or mo
 ### Definitions
 #### Geological property
 * The observable or measureable properties of a geological or administrative feature.
-* 
+* The properties derived from the combined insight of multiple observations on a feature.
 * Examples: mineralogy, hydrocarbon potential, hydrological properties, stratigraphy, geologic age.  
 
 #### Ultimate Feature of Interest - Geological or administrative features
@@ -102,9 +102,10 @@ Model for an observation-collection, in which the collection may carry one or mo
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
-* The one-off event examining a geological or administrative feature. 
+* The one-off time bound event examining a geological or administrative feature. 
 * The type of exploration, assessment, or processing work that produces samples or observations.
 * A survey is a group activities (actuations and/or sampling and/or observations), that occur together and have a defined relationship. 
+* Geological surveys are a sub-set of ontological surveys.
 * ```Survey``` is imperfectly synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset.
 * A survey as a broad project may have sub-surveys.
 * Examples: seismic survey, geochemical survey, geophysical survey, petrophysical survey.
@@ -114,11 +115,14 @@ Model for an observation-collection, in which the collection may carry one or mo
 
 #### Sample
 
-* An enduring artefact produced by a survey. 
+* An artefact produced by a sampling activity that has enduring relevance. 
+* A sample itself does not have to persist to have enduring relevance. For example the observations pertaining to a core plug or cuttings sample are still of interest even if the plug is destroyed, cuttings are aggregated, or the sample is sub-sampled. 
+* Sampling activities may occur as part of a broader survey. 
 * Synonymous with ```specimen``` for physical artefacts.
 *	The sample is a representative part of a feature of interest.
 * Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
 * A sample may be surveyed to produce a new sample or sub-sample e.g. An image (sample) may be the produced from an aerial photographic survey, each pixel within that image is a sub-sample.
+* Scientific samples are a sub-set of ontological samples. The entire volume of ore extracted from a mine is a derivative entity that represents the orebody it was mined from and is hence a sample. A refined product, such as a copper cathode, is a derivative of prior samples of a feature and is hence a sample. Even where neither are considered samples in the scientific sense.
 * Examples: drill core, drill cuttings, soil sample, hand specimens, water, photograph, LAS file.
 
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
