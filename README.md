@@ -419,16 +419,18 @@ Department of Resources
 Brisbane, QLD, Australia  
 <mark.gordon@resources.qld.gov.au>  
 
-*Author*:  
-**David Crosswell**  
-Enterprise Architect  
-Cross-Lateral Enterprises  
-<https://crosslateral.com.au>  
-
-*Contributor*:  
+*Contributors*:  
 **Vance Kelly**
 Principal Data Manager
 Geological Survey of Queensland 
 Department of Resources
 Brisbane, QLD, Australia  
-<vance.kelly@resources.qld.gov.au>   
+<vance.kelly@resources.qld.gov.au>
+
+**Luke Hauck**
+Geoscientist
+Geological Survey of Queensland
+Department of Resources
+Brisbane, QLD, Australia
+<luke.hauck@reosurces.qld.gov.au>
+
