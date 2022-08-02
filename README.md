@@ -259,11 +259,11 @@ Figure 2: Geological Properties Conceptual Model</p>
 - [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
 - [NEII Observation Method](https://vocabs.ands.org.au/viewById/167
 
-## REference Mapping of Legacy Systems into GeoProperties Database
+## Reference Mapping of Legacy Systems into GeoProperties Database
 ### Mapping to MERLIN tables
 | Data Concept | MERLIN table | Comments |
 |---|---|---|
-|Geological Property|--|minocc?|
+|Geological Property|--|minocc|
 |Geoadmin Feature|--|--|
 |Site|sgf_sites|--|
 |Survey|sgf_survey|--|
