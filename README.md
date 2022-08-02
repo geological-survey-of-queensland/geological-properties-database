@@ -110,8 +110,8 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Geological property status|Lookup to controlled list of status|Vocab|-|-|
 
 ## Geoadmin Feature data elements
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |Feature ID|A unique identifer|System|-|-|
 |Feature name|A textual name|User|-|-|
 |Feature type|Lookup to controlled list of feature types|Vocab|-|-|
@@ -120,8 +120,8 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Feature geometry|Spatial representation(s) of feature|WKT|-|-|
 
 ## Site data elements
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |Site ID|A unique identifer|System|-|-|
 |Site name|A textual name|User|-|-|
 |Site description|A textual description|User|-|-|
@@ -136,11 +136,9 @@ Figure 2: Geological Properties Conceptual Model</p>
 
 > NOTE: A borehole is a specialised type of site. See the [GSQ Borehole Database conceptual design](https://github.com/geological-survey-of-queensland/borehole-database). The Borehole Database is a component of the Geological Properties database.
 
-> Question: Do we record the stratigraphy at the site level?
-
 ## Survey data elements
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |Survey ID|A unique identifer|System|-|-|
 |Survey title|A textual name|User|-|-|
 |Survey description|A textual description|User|-|-|
@@ -157,8 +155,8 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Dataset link|Links to related datasets including raw data|Hyperlink|-|-|
 
 ## [Samples data elements](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |IGSN number|A globally unique identifer|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|-|-|
 |Sample title|A textual name|User|-|-|
 |Sample alias|An alternative identifier for the sample|User|-|-|
@@ -187,8 +185,8 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Sample geometry|Spatial representation of the sample|WKT|-|-|
 
 ## Observation data elements
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |Observation ID|A unique identifer|System|-|-|
 |Observer|e.g. laboratory name (from org list)|Lookup|-|-|
 |Observation type|Procedure or method|Vocab|-|-|
@@ -202,15 +200,13 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Observation details|Observation-specific additional information|User|-|-|
 
 ## Result data elements
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |Result ID|A unique identifer|System|-|-|
 |Result type|Geochem, hydrocarbons, biostratighy, geochronology?|Vocab|-|-|
 |Analyte|Element, oxide, compound, or property that was determined or measured by the laboratory. |-|-|-|
 |Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|-|-|
 |Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|-|-|
-
-> Does ```detection upper limit``` and ```detection lower limit``` fit in Results or Observations? Do we need them? Or do we just use, e.g.  __Values less than the lower limit of determination are negative (absolute value of the number given is the lower limit of determination) while values greater than the upper limit of determination are the upper limit with a .1111 suffix.__
 
 ## Geological Properties Database vocabularies
 - Geological properties type -  _to be developed in future release_
@@ -263,8 +259,8 @@ Figure 2: Geological Properties Conceptual Model</p>
 - [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
 - [NEII Observation Method](https://vocabs.ands.org.au/viewById/167
 
-
-## Mapping to MERLIN tables
+## REference Mapping of Legacy Systems into GeoProperties Database
+### Mapping to MERLIN tables
 | Data Concept | MERLIN table | Comments |
 |---|---|---|
 |Geological Property|--|minocc?|
@@ -276,7 +272,7 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Result|sgf_analysis_results|--|
 
 
-## Mapping to GEM Aerial Geophysics Surveys tables
+### Mapping to GEM Aerial Geophysics Surveys tables
 | Data Concept | GEM table | Comments |
 |---|---|---|
 |Geological Property|--|--|
@@ -287,7 +283,7 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Observation|--|--|
 |Result|--|--|
 
-## Mapping to GEM Seismic Surveys tables
+### Mapping to GEM Seismic Surveys tables
 | Data Concept | GEM table | Comments |
 |---|---|---|
 |Geological Property|--|--|
@@ -298,7 +294,7 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Observation|--|--|
 |Result|--|--|
 
-## Mapping to Explorer3 tables
+### Mapping to Explorer3 tables
 | Data Concept | Explorer3 table | Comments |
 |---|---|---|
 |Geological Property|--|--|
@@ -309,7 +305,7 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Observation|--|--|
 |Result|--|--|
 
-## Mapping to Geological Site Observation Database For Queensland (REGMAP)
+### Mapping to Geological Site Observation Database For Queensland (REGMAP)
 Data in the Geological observation database is derived from the Surface Geology System in MERLIN. The data has been decoded and concatenated into simple, relational database structures with MS Access software interfaces and in-built forms and queries to interrogate the data.
 
 The data compiled includes rock types, rock characteristics (e.g. colour, grain size, texture etc), structural measurements and formation name. See [Geological site observation database for Queensland (REGMAP).pdf](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/files/Geological%20site%20observation%20database%20for%20Queensland%20(REGMAP).pdf) and [database_of_site_observations.png](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/database_of_site_observations.png)
@@ -335,7 +331,7 @@ In the future, this publication will be able to produced from the data in the Ge
 |Text|--|--|
 |Whole Rock Geochem|--|--|
 
-## Mapping to Mineral Occurrence Data for Queensland Database (MINOCC)
+### Mapping to Mineral Occurrence Data for Queensland Database (MINOCC)
 The MINOCC database is a MS Access database with mine information, sites by commodity, geology reports for mines, production and resources, deposit models. The data is derived from MERLIN. See [MinOccDB in CSV format.zip](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/files/MinOccDB%20in%20CSV%20format.zip) and [minocc_database.png](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/minocc_database.png)
 
 In the future, this publication will be able to produced from the data in the Geological Properties database. 
