@@ -34,21 +34,6 @@ The table below demonstrates how these database elements may relate to each othe
 |**Observation**|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
 |**Result**|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
 
-
-#### Survey vs Observation - what's the difference?
-A 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observations and radiometric observations.
-
-Further examples of Surveys and their potential Observations are shown below. 
-
-| Survey Type | Survey Method | Observation Type     | Observation Method | Observation Instrument       |
-|-------------|---------------|----------------------|--------------------|------------------------------|
-| Seismic     | Ground        | 2D Seismic           | Vibroseis          | Geophone make, model         |
-| Seismic     | Marine        | 3D Seismic           | Air Gun            | Air Gun make model           |
-| Geophysics  | Airborne      | Electromagnetic      | VTEM               | VTEM instrument make model   |
-| Geophysics  | Ground        | Electromagnetic      | Moving Loop EM     | Moving Loop EM make model    |
-| Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Einstein                     |
-| Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
-
 ### Definitions
 #### Geological Property
 The observable or measureable properties of a geological or administrative Feature. The properties are derived from the combined insight of multiple Observations on a Feature as conducted by a Survey. Examples include, but not limited to: mineralogy, hydrocarbon potential, hydrological properties, stratigraphy, and geologic age.  
@@ -97,13 +82,27 @@ A Result is a description or a value, including a unit of measure, of an Observa
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
-## Geological Properties Database conceptual data model
+#### Survey vs Observation - what's the difference?
+For clairty, a 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observations and radiometric observations.
+
+Further examples of Surveys and their potential Observations are shown below. 
+
+| Survey Type | Survey Method | Observation Type     | Observation Method | Observation Instrument       |
+|-------------|---------------|----------------------|--------------------|------------------------------|
+| Seismic     | Ground        | 2D Seismic           | Vibroseis          | Geophone make, model         |
+| Seismic     | Marine        | 3D Seismic           | Air Gun            | Air Gun make model           |
+| Geophysics  | Airborne      | Electromagnetic      | VTEM               | VTEM instrument make model   |
+| Geophysics  | Ground        | Electromagnetic      | Moving Loop EM     | Moving Loop EM make model    |
+| Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Einstein                     |
+| Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
+
+## Geological Properties Database Conceptual Data Model
 <p align="center">
 <img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-conceptual-ERD.png"><br>
 Figure 2: Geological Properties Conceptual Model</p>
 
 
-## Geological Property data elements
+## Geological Property Data Elements
 |Data Element|Remarks|Source|DataType|Length|
 |---|---|---|---|---|
 |Geological property ID|A unique identifer|System|-|-|
