@@ -23,9 +23,9 @@ Figure 1: High-level Geological Properties data model</p>
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the feature at a 'Site'. The site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the Results to understand the **geological properties** of the Feature.
 
-The below demonstrates how these elements may relate to each other, including example information they may contain. 
+The table below demonstrates how these elements may relate to each other, including example information they may contain. 
 
-|SOSA Category|Borehole|Geophysics|Geochemistry|
+| |Borehole|Geophysics|Geochemistry|
 |---|---|---|---|
 |Feature|Bowen Basin|Queensland|Mary Kathleen U Deposit|
 |Site|Well:<br>Fair Gully 1|Extent:<br>GSQ NWQ Gravity Survey 2020|Field Site GSQ-S01 (-20.744088, 140.013291)|
