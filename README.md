@@ -36,7 +36,7 @@ The table below demonstrates how these database elements (Feature, Site, Survey,
 
 
 #### Survey vs Observation - what's the difference?
-A 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a _Observation Collection_. For example, a Geophysical Observation Collection can contain both magnetic observations and a radiometric observations.
+A 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observation and radiometric observations.
 
 
 ### Aligning terminology between SOSA and Geoproperties
