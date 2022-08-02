@@ -13,14 +13,7 @@ The Geoproperties Database is based on the SOSA/SSN ontology. Understanding this
 The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data. You may see it referred to as "GeoProperties" or simply "GeoProps".
 
 ### Objectives of the Geological Properties Database
-* Replace the existing Surface Geology functionality in the MERLIN system.  
-* Replace the Cores and Cuttings functionality in MERLIN.  
-* Replace the Mineral Occurrences functionality in MERLIN.  
-* Replace the Aerial Geophysics functionality in GEM.  
-* Replace the Seismic Survey functionality in GEM.  
-* Capture the primary Geochemical data recorded in the Explorer3 system.  
-* Provide a repository for new data created by the department.  
-* Provide a repository for new data submitted to the department.
+GeoProps streamlined several disparate legacy databases within the Queensland Government by coalscecing them into a single system. It provides a repository for new and legacy data and metadata submitted to the Department. It acts as a point-of-truth for much of the georesource data and metadata generated within Queensland.
 
 ## Geological properties data model
 <p align="center">
@@ -28,9 +21,10 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 Figure 1: High-level Geological Properties data model</p>
 
 ### A plain English definition
-We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
+We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the feature at a 'Site'. The site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the Results to understand the **geological properties** of the Feature.
 
-## SSOR Examples
+The below demonstrates how these elements may relate to each other, including example information they may contain. 
+
 |SOSA Category|Borehole|Geophysics|Geochemistry|
 |---|---|---|---|
 |Feature|Bowen Basin|Queensland|Mary Kathleen U Deposit|
@@ -40,7 +34,6 @@ We seek to understand the geological properties of a geological or administrativ
 |Observation|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
 |Result|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
 
-*array data such as LAS files, grids, and images may theoretically have atomised results, but practically may be only be described in the Geological Properties Database to the survey or sample level with the array data preserved in their original file formats as associated dataset resources. For some use cases, the Wireline 'Survey' may not be important in isolation, and therefore may be represented as a resource attached to a borehole site in its native LAS or DLIS format.
 
 ## Understanding Surveys vs Observations
 
