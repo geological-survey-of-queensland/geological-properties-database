@@ -5,12 +5,12 @@ One of the primary purposes of the Geological Survey of Queensland (GSQ) is to i
 GSQ creates, collects and provides geoscience data, information and advice on economic resources and seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
 
 ## Important! - Semantic Sensor Network Ontology (SOSA)
-The Geoproperties Database is based on the SOSA ontology. Understanding this ontology is key to understanding the GeoProperties Database. 
+The [Sensor, Observation, Sample, and Actuator (SOSA)](https://www.w3.org/TR/vocab-ssn/) ontology provides a formal but lightweight general-purpose specification for modelling the interaction between the entities involved in the acts of observation, actuation, and sampling, the activity of which is called a "sensor". It assists with describing the relationships between database properties and entities. It is built upon the The Semantic Sensor Network (SSN) ontology, a framework for producing machine-processable representation of sensor capabilities, properties, observations and measurement processes. 
 
-The [Sensor, Observation, Sample, and Actuator (SOSA)](https://www.w3.org/TR/vocab-ssn/) ontology provides a formal but lightweight general-purpose specification for modelling the interaction between the entities involved in the acts of observation, actuation, and sampling. It assists with describing the relationships between database properties and entities.  
+The Geoproperties Database is based on the SOSA/SSN ontology. Understanding this ontology is key to understanding the Geological Properties Database. See Figure 1 (High-level Geological Properties data model) below for an example of applying this ontology GSQ's data. Items such as "isSurveyOf" and "hasResult" are SOSA/SSN terms describing the relationship between entities in the Geological Properties Database. 
 
 ## The Geological Properties Database
-The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
+The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data. You may see it referred to as "GeoProperties" or simply "GeoProps".
 
 ### Objectives of the Geological Properties Database
 * Replace the existing Surface Geology functionality in the MERLIN system.  
@@ -25,7 +25,7 @@ The Geological Survey of Queensland is creating a new Geological Properties data
 ## Geological properties data model
 <p align="center">
 <img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-model.svg" width="560"><br>
-Figure 1: Geological properties data model</p>
+Figure 1: High-level Geological Properties data model</p>
 
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative feature. We undertake a survey on the feature at a site. The site may comprise the whole feature, part of the feature, or may encompass and extend beyond the feature. The survey yields samples that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct observations on the samples using various procedures. The observation yields results as measured values or qualitative descriptions. We interpret the results to understand the geological properties of the feature.
