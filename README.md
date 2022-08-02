@@ -2,18 +2,12 @@
 
 One of the primary purposes of the Geological Survey of Queensland (GSQ) is to improve the understanding of resource potential in Queensland.
 
-GSQ creates, collects and provides geoscience data, information and advice on mineral resources, coal resources, coal seam gas, petroleum including unconventional petroleum, oil shale and geothermal energy within the State of Queensland. GSQ creates this knowledge through a range of geoscience projects and initiatives including industry exploration grants.
-
-The GSQ seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
+GSQ creates, collects and provides geoscience data, information and advice on economic resources and seeks to develop an understanding of the geological properties of the State of Queensland, both at surface and in the sub-surface.
 
 ## Important! - Semantic Sensor Network Ontology (SOSA)
-The Geoproperties Database is based on the SOSA ontology. If you understand this ontology, you will understand geoproperties.
+The Geoproperties Database is based on the SOSA ontology. Understanding this ontology is key to understanding the GeoProperties Database. 
 
-The Semantic Sensor Network (SSN) ontology https://www.w3.org/TR/vocab-ssn/ is an ontology for describing sensors and their observations, the involved procedures, the studied features of interest, the samples used to do so, and the observed properties, as well as actuators. 
-
-SSN follows a horizontal and vertical modularization architecture by including a lightweight but self-contained core ontology called SOSA (Sensor, Observation, Sample, and Actuator) for its elementary classes and properties. 
-
-With their different scope and different degrees of axiomatization, SSN and SOSA are able to support a wide range of applications and use cases, including satellite imagery, large-scale scientific monitoring, industrial and household infrastructures, social sensing, citizen science, observation-driven ontology engineering, and the Web of Things.
+The [Sensor, Observation, Sample, and Actuator (SOSA)](https://www.w3.org/TR/vocab-ssn/) ontology provides a formal but lightweight general-purpose specification for modelling the interaction between the entities involved in the acts of observation, actuation, and sampling. It assists with describing the relationships between database properties and entities.  
 
 ## The Geological Properties Database
 The Geological Survey of Queensland is creating a new Geological Properties database as the single source of truth for historical and new data.
