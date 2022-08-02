@@ -82,7 +82,7 @@ A Result is a description or a value, including a unit of measure, of an Observa
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
-#### Survey vs Observation - what's the difference?
+##### Survey vs Observation - what's the difference?
 For clairty, a 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observations and radiometric observations.
 
 Further examples of Surveys and their potential Observations are shown below. 
