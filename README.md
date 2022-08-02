@@ -76,12 +76,6 @@ An Observation is an act of carrying out a measurment using a _procedure_ to est
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
-#### Result
-A Result is a description or a value, including a unit of measure, of an Observation performed on a Sample. For example, physical properites (concentration, mass, temperature), petrographic descriptions, geophysical measurements (gravity, magnetic field strength), petrophysical log measurements (gamma, density, resistivity).
-
-* See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
-* See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
-
 ##### Survey vs Observation - what's the difference?
 For clairty, a 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observations and radiometric observations.
 
@@ -96,11 +90,16 @@ Further examples of Surveys and their potential Observations are shown below.
 | Geophysics  | Airborne      | Gravity Gradiometery | Falcon             | Einstein                     |
 | Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
 
+#### Result
+A Result is a description or a value, including a unit of measure, of an Observation performed on a Sample. For example, physical properites (concentration, mass, temperature), petrographic descriptions, geophysical measurements (gravity, magnetic field strength), petrophysical log measurements (gamma, density, resistivity).
+
+* See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
+* See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
+
 ## Geological Properties Database Conceptual Data Model
 <p align="center">
 <img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-conceptual-ERD.png"><br>
 Figure 2: Geological Properties Conceptual Model</p>
-
 
 ## Geological Property Data Elements
 |Data Element|Remarks|Source|DataType|Length|
