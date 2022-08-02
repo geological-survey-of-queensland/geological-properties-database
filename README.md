@@ -102,8 +102,8 @@ A Result is a description or a value, including a unit of measure, of an Observa
 Figure 2: Geological Properties Conceptual Model</p>
 
 ## Geological Property Data Elements
-|Data Element|Remarks|Source|DataType|Length|
-|---|---|---|---|---|
+|Data Element|Remarks|Source|
+|---|---|---|
 |Geological property ID|A unique identifer|System|-|-|
 |Geological property name|A textual name|User|-|-|
 |Geological property type|Lookup to controlled list of property types|Vocab|-|-|
