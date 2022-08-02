@@ -53,7 +53,7 @@ Further examples of Surveys and their potential Observations are shown below.
 #### Geological Property
 The observable or measureable properties of a geological or administrative Feature. The properties are derived from the combined insight of multiple Observations on a Feature as conducted by a Survey. Examples include, but not limited to: mineralogy, hydrocarbon potential, hydrological properties, stratigraphy, and geologic age.  
 
-#### Ultimate Feature of Interest - Geological or administrative features
+#### Feature (Ultimate Geological or Administrative Feature of Interest)
 Geological Features are spatially-bound entities that have properties of interest for commercial, environmental and societal reasons. They are discrete, complete and internally coherent entities upon which there exists a consensus for its prescribed existence. For example, a stratigraphic formation may be a Feature of Interest, which itself may sit withn a larger Ultimate Feature of Interest such as a geological basin.
 
 Administrative Features are spatially-bound entities that are defined and managed by regulatory agencies. For example, the Queensland Government can issue a Resource Authority ("RA" or "Tenure") which prescribes the allowable work area for the resource company who holds that tenure. As multiple Surveys are conducted, Observations made, and Results obtained, the Tenure becomes the Ultimate Feature of Interest.
@@ -63,24 +63,14 @@ Essentially, the scale of investigation will determine the Ultimate Feature of I
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
 * See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
-#### Proximate Feature of Interest - Sites
-* An entity or location within, wholly encompassing, or intersecting an ultimate feature that acts as a proxy to represent that complete (ultimate) feature.  
-* A Feature of Interest is proximate when it _represents_ an ultimate feature, as opposed to being a discrete component of a larger feature. e.g. an outcrop can be examined as a representitive of a formation, whereas a formation does not represent a whole basin but is a component of it.
-* Where a sampling is undertaken, but the sampling geometry and site geometry do not necessarily have to be equivalent.
-* A site may be a component of a larger site.
-* A site may encompass or equate to the spatial incidence of an Ultimate Feature of Interest.
-* proxFeature representativeOf ultFeature
-* Examples: outcrop, borehole, stream, mine, alluvial site.
+#### Site (Proximate Feature of Interest)
+A Site is an entity or location within, wholly encompassing, or intersecting an Ultimate Feature that acts as a proxy to represent that complete (ultimate) feature. A Feature of Interest is proximate when it _represents_ an ultimate feature, as opposed to being a discrete component of a larger feature. For example, an outcrop can be examined as a representitive of a formation, whereas a formation does not represent a whole basin but is a component of it. A Site may be a component of a larger Site, and may encompass or equate to the spatial boundaries of an Ultimate Feature of Interest. 
+
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
-* The one-off time bound event examining a geological or administrative feature. 
-* The type of exploration, assessment, or processing work that produces samples or observations.
-* A survey is a group activities (actuations and/or sampling and/or observations), that occur together and have a defined relationship. 
-* Geological surveys are a sub-set of ontological surveys.
-* ```Survey``` is imperfectly synonymous with the term ```Observation Collection```, and with the term ```Project``` in the geochemistry dataset.
-* A survey as a broad project may have sub-surveys.
-* Examples: seismic survey, geochemical survey, geophysical survey, petrophysical survey.
+A Survey is a one-off time-bound event examining a Geological or Administrative Feature and describes the type of exploration, assessment, or processing work that produces Samples or Observations.. It involves a group of activities, such as Sampling and Observations, that occur together and have a defined realtionship, typically being conducted on a Site. For example, a resource company may decide to conduct three different surveys – geophysical, geochemical, and petrophysical – on a tenure they hold. 
+
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
