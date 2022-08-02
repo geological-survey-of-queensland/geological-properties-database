@@ -21,9 +21,9 @@ GeoProps streamlined several disparate legacy databases within the Queensland Go
 Figure 1: High-level Geological Properties data model</p>
 
 ### A plain English definition
-We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the feature at a 'Site'. The site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the Results to understand the **geological properties** of the Feature.
+We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the Feature at a 'Site'. The Site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the Results to understand the **geological properties** of the Feature.
 
-The table below demonstrates how these database elements (Feature, Site, Survey, Sample, Observation, Result) may relate to each other for different data types (Borehole, Geophysics, Geochemistry), including example information they may contain. 
+The table below demonstrates how these database elements may relate to each other for different data types (Borehole, Geophysics, Geochemistry) with example information. 
 
 | |**Borehole**|**Geophysics**|**Geochemistry**|
 |---|---|---|---|
@@ -50,18 +50,16 @@ Further examples of Surveys and their potential Observations are shown below.
 | Geophysics  | Ground        | Electrical           | DC Resistivity     | 10 kW Scintrex               |
 
 ### Definitions
-#### Geological property
-* The observable or measureable properties of a geological or administrative feature.
-* The properties derived from the combined insight of multiple observations on a feature.
-* Examples: mineralogy, hydrocarbon potential, hydrological properties, stratigraphy, geologic age.  
+#### Geological Property
+The observable or measureable properties of a geological or administrative Feature. The properties are derived from the combined insight of multiple Observations on a Feature as conducted by a Survey. Examples include, but not limited to: mineralogy, hydrocarbon potential, hydrological properties, stratigraphy, and geologic age.  
 
 #### Ultimate Feature of Interest - Geological or administrative features
-* Geological features have properties that are of interest for commercial, environmental and societal reasons.  
-* Administrative features are spatial features that are defined and managed by regulatory agencies.
-* Ultimate features of interest are entities that are discrete, complete, and internally coherent. 
-* Ultimate features may be components of larger features as part of a set, where each is an independent discrete entity e.g. formations within a basin.  
-* ultFeature componentOf ultFeature
-* Examples: basin, province, trough, craton, orogen, formation, permit, sub-block, resource accumulation.
+Geological Features are spatially-bound entities that have properties of interest for commercial, environmental and societal reasons. They are discrete, complete and internally coherent entities upon which there exists a consensus for its prescribed existence. For example, a stratigraphic formation may be a Feature of Interest, which itself may sit withn a larger Ultimate Feature of Interest such as a geological basin.
+
+Administrative Features are spatially-bound entities that are defined and managed by regulatory agencies. For example, the Queensland Government can issue a Resource Authority ("RA" or "Tenure") which prescribes the allowable work area for the resource company who holds that tenure. As multiple Surveys are conducted, Observations made, and Results obtained, the Tenure becomes the Ultimate Feature of Interest.
+
+Essentially, the scale of investigation will determine the Ultimate Feature of Interest, which itself is a collection of sub-scale Features. 
+
 * See [GSQ Geological and Administrative Features vocabulary](https://vocabs.gsq.digital/vocabulary/gsq-features) and [GSQ Geo Admin Features Ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)
 * See [sosa:FeatureOfInterest](https://www.w3.org/TR/vocab-ssn/#SOSAFeatureOfInterest)
 
