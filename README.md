@@ -76,36 +76,28 @@ A Survey is a one-off time-bound event examining a Geological or Administrative 
 * See [sosa:Sampling](https://www.w3.org/TR/vocab-ssn/#SOSASampling)
 
 #### Sample
+A Sample is an artefact produced that has enduring relevance and is a representative part of a Feature of Interest. It may be conducted as part of a Survey as part of sampling activities and is synonymous with "specimen" for physical artefacts.
 
-* An artefact produced by a sampling activity that has enduring relevance. 
-* A sample itself does not have to persist to have enduring relevance. For example the observations pertaining to a core plug or cuttings sample are still of interest even if the plug is destroyed, cuttings are aggregated, or the sample is sub-sampled. 
-* Sampling activities may occur as part of a broader survey. 
-* Synonymous with ```specimen``` for physical artefacts.
-*	The sample is a representative part of a feature of interest.
-* Samples may be **original samples**, **subsamples** where a new sample is split into smaller samples, **processed samples** where a sample content is retained but is processed to have altered properties, or **duplicates** - identical samples.
-* A sample may be surveyed to produce a new sample or sub-sample e.g. An image (sample) may be the produced from an aerial photographic survey, each pixel within that image is a sub-sample.
-* Scientific samples are a sub-set of ontological samples. The entire volume of ore extracted from a mine is a derivative entity that represents the orebody it was mined from and is hence a sample. A refined product, such as a copper cathode, is a derivative of prior samples of a feature and is hence a sample. Even where neither are considered samples in the scientific sense.
-* Examples: drill core, drill cuttings, soil sample, hand specimens, water, photograph, LAS file.
+A sample itself does not have to persist to have enduring relevance. For example, the Observations pertaining to a core plug or cuttings sample are still of interest even if the plug is destroyed, or cuttings are aggregated, or the sample is sub-sampled. 
+
+Samples may be **original sample**, **sub-sample** (where a sample is split into smaller samples), **processed sample** (where a sample content is retained but is processed to have altered properties), or **duplicate sample** (an identical sample).
 
 * See the [GSQ Sample Profile](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
 * See [sosa:Sample](https://www.w3.org/TR/vocab-ssn/#SOSASample)
 
 #### Observation
-* An act of carrying out an observation using a _procedure_ to measure, estimate, calculate a value of, or describe a feature, site or sample.
-* Observations differ from sampling in that sampling yields an artefact, whereas an observation yields a qualitative or quantitative result.
-* Observations may be the observation of the physical limits of an interval.
-* Examples: physical properties, hyperspectral scanning, gravity, stratigraphic interval, inductively coupled plasma spectrometry, mineralogical components
+An Observation is an act of carrying out a measurment using a _procedure_ to estimate, calculate a value of, or describe a feature, site or sample. Observations differ from sampling in that sampling yields an artefact (for example, a physical specimen), whereas an observation yields a qualitative or quantitative Results (for example, a table of geochemical measurements for multiple elements).
 
 * See the [GSQ Observation Profile](https://github.com/geological-survey-of-queensland/gsq-observation-profile)
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
 #### Result
-* The result of the observation performed on a sample, stored as a description or a value and unit of measure.  
-* Examples: 
-  - Physical properites, e.g. concentration, mass, temperature
+A Result is a description or a value, including a unit of measure, of an Observation performed on a Sample. For example, 
+  - Physical properites: concentration, mass, temperature
   - Petrographic descriptions
-  - Geophysical measurements e.g. gravity, magnetic field strength
-  - Petrophysical log measurements e.g. gamma, density, resistivity.
+  - Geophysical measurements: gravity, magnetic field strength
+  - Petrophysical log measurements: gamma, density, resistivity.
+
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
@@ -413,24 +405,24 @@ This code repository's content are licensed under the [Creative Commons Attribut
 
 ## Contacts
 *System owner*:  
-**Mark Gordon**  
-Geological Survey of Queensland  
-Department of Resources
-Brisbane, QLD, Australia  
+**Mark Gordon**,
+Geological Survey of Queensland,
+Department of Resources,
+Brisbane, QLD, Australia,
 <mark.gordon@resources.qld.gov.au>  
 
 *Contributors*:  
-**Vance Kelly**
-Principal Data Manager
-Geological Survey of Queensland 
-Department of Resources
-Brisbane, QLD, Australia  
+**Vance Kelly**,
+Principal Data Manager,
+Geological Survey of Queensland,
+Department of Resources,
+Brisbane, QLD, Australia,  
 <vance.kelly@resources.qld.gov.au>
 
-**Luke Hauck**
-Geoscientist
-Geological Survey of Queensland
-Department of Resources
-Brisbane, QLD, Australia
+**Luke Hauck**,
+Geoscientist,
+Geological Survey of Queensland,
+Department of Resources,
+Brisbane, QLD, Australia,
 <luke.hauck@reosurces.qld.gov.au>
 
