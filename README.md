@@ -18,7 +18,7 @@ GeoProps streamlined several disparate legacy databases within the Queensland Go
 ## Geological properties data model
 <p align="center">
 <img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-model.svg" width="560"><br>
-Figure 1: High-level Geological Properties data model</p>
+Figure 1: High-level Geological Properties data model (Full model in Figure 2 below)</p>
 
 ### A plain English definition
 We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the Feature at a 'Site'. The Site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the Results to understand the **geological properties** of the Feature.
@@ -92,26 +92,15 @@ An Observation is an act of carrying out a measurment using a _procedure_ to est
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
 #### Result
-A Result is a description or a value, including a unit of measure, of an Observation performed on a Sample. For example, 
-  - Physical properites: concentration, mass, temperature
-  - Petrographic descriptions
-  - Geophysical measurements: gravity, magnetic field strength
-  - Petrophysical log measurements: gamma, density, resistivity.
+A Result is a description or a value, including a unit of measure, of an Observation performed on a Sample. For example, physical properites (concentration, mass, temperature), petrographic descriptions, geophysical measurements (gravity, magnetic field strength), petrophysical log measurements (gamma, density, resistivity).
 
 * See [Units of measure](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Units%20of%20measure.md)
 * See [sosa:Result](https://www.w3.org/TR/vocab-ssn/#SOSAResult)
 
-#### Practical Usage
-* Conceptually each data point in a LAS file is a result (and a LAS file is a collection of samples), however it may be impractical or redundant to record this level of detail in the GeoProperties database when the original file contains that information and is the standard file type that is read and used by humans or software. Therefore the model allows for the entity to stop at sample to describe the las file and direct to associated documents (i.e. the LAS) without populating each cascading observation and result, or to be linked as a resource at the site level.  
-* While theoretically there is a coherent chain from Ultimate Feature to Result it may be implicit, misleading, or superfluous to include each element e.g. a strike and dip measurement on an outcrop is an observation, but recording it as a survey of measurements recorded with a sample as a written notebook is most likely superfluous, of little value, unlikely to reference a findable object, and merely uses space in a catalogue and data store. 
-* A seismic receiver location _is_ a site within a seismic line site, but in implementation the database will record lines and the receiver locations will remain within the referenced files (documents) or as sample locations.
-* Surveys as a collection of activities, and observations as activities that produce results, are complementary. e.g. a Seismic Survey includes the on-ground activities of setting up shotpoints and receivers, data capture, processing etc, a 2D or 3D seismic observation is the component of that survey that produces the data artefacts such as SEG-D.
-* Each processing step of a sample to the point of analysis can be represented as a chain of sub-samples leading back to an ultimate sample of interest. However commonly, only the original sample and the fully processed sample that that is analysed need to be represented. The full chain of processing can be recorded as a document (e.g. JSON, or laboratory report PDF) that is associated with the processed sample.
-
 ## Geological Properties Database conceptual data model
 <p align="center">
 <img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-conceptual-ERD.png"><br>
-Figure 1: Geological Properties Conceptual Model</p>
+Figure 2: Geological Properties Conceptual Model</p>
 
 
 ## Geological Property data elements
