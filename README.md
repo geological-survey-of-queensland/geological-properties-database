@@ -101,7 +101,7 @@ A Result is a description or a value, including a unit of measure, of an Observa
 <img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-conceptual-ERD.png"><br>
 Figure 2: Geological Properties Conceptual Model</p>
 
-## Geological Property Data Elements
+## Geological Property data elements
 |Data Element|Remarks|Source|
 |---|---|---|
 |Geological property ID|A unique identifer|System|-|-|
