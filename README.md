@@ -239,5 +239,5 @@ Geoscientist,
 Geological Survey of Queensland,
 Department of Resources,
 Brisbane, QLD, Australia,
-<luke.hauck@reosurces.qld.gov.au>
+<luke.hauck@resources.qld.gov.au>
 
