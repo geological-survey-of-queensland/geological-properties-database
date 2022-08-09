@@ -154,7 +154,7 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Survey details|Survey-specific additional information|User|-|-|
 |Dataset link|Links to related datasets including raw data|Hyperlink|-|-|
 
-## [Samples data elements](https://github.com/geological-survey-of-queensland/gsq-sample-profile)
+## Samples data elements
 |Data Element|Remarks|Source|
 |---|---|---|
 |IGSN number|A globally unique identifer|[ANDS IGSN minting service](https://www.ands.org.au/online-services/igsn-service)|-|-|
