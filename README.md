@@ -208,24 +208,6 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|-|-|
 |Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|-|-|
 
-## Further reading
-- [TERN Plot Ontology](http://www.linked.data.gov.au/def/plot/)
-- [Minerals and coal reporting guideline (2019)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/mineral-coal-reporting-guideline)
-- [Petroleum and gas reporting guideline (2018)](https://www.dnrme.qld.gov.au/mining-resources/initiatives/pandg-reporting-guideline-2018)
-- Government Geoscience Information Committee (GGIC) [Australian Requirements for the Submission of Digital Exploration Data](http://www.australiaminerals.gov.au/__data/assets/pdf_file/0004/60772/National_Guidelines_Version_4.5_February_18.pdf)
-- [The Queensland Exploration Geochemistry And Drillhole Database and Database Packages Background information and operational guide](https://gsq-horizon.s3-ap-southeast-2.amazonaws.com/GEOCHEMISTRY+DATABASES/Geochemistry-data-instructions.pdf)
-- [Geochemistry data model for the Open Geoscience Data Model](https://www.bgs.ac.uk/services/dataModels/geochemistry.html)
-- [USGS National Geochemical Database data model](https://mrdata.usgs.gov/ngdb/sediment/about.php)
-- [PPDM](https://ppdm.org) for petroleum and gas
-- [GeoSciML](http://www.geosciml.org/) for minerals
-- [CoalLog](https://ausimm.com/coal-log/) for coal  
-- [IGSN](http://igsn.github.io/)
-- [1EP Geoscience Project](http://appsuppt103/confluence/display/1EP/Geoscience)
-- Geoscience Australia's [National Geochemical Survey of Australia Project](https://www.ga.gov.au/about/projects/resources/national-geochemical-survey). See also https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/65464
-- Geoscience Australia's [Geochemistry and Geochronology Themes metadata](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/65464)
-- GSQ [Geological Observations Data Package](http://qdexdata.dnrm.qld.gov.au/QDEXDataDownloadManager/Results?type=Geology&id=GSQ%20Site%20Locations)
-- GSQ [Mineral Occurence Data Package](http://qdexdata.dnrm.qld.gov.au/QDEXDataDownloadManager/Results?type=Geology&id=GSQ%20MinOcc)
-
 ## See also
 * [Geoadmin features ontology](https://github.com/geological-survey-of-queensland/gsq-geoadminfeatures-ont)  
 * [GSQ site profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)  
