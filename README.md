@@ -208,57 +208,6 @@ Figure 2: Geological Properties Conceptual Model</p>
 |Value|Numeric or textual value|[QUDT](https://www.qudt.org/)|-|-|
 |Unit of measure|Controlled list of measures|[QUDT](https://www.qudt.org/)|-|-|
 
-## Geological Properties Database vocabularies
-- Geological properties type -  _to be developed in future release_
-- [Geoadmin feature type](https://vocabs.gsq.digital/vocabulary/gsq-features)
-- [Geoadmin feature status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/qld-resource-permit-status.ttl) aka Permit Status
-- [Site types](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sites.ttl)
-- Site detail type -  _Need Clarification_
-- [Site relationship](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-relationships.ttl)
-- [Site status](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/site-status.ttl)
-- [Borehole purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-purpose.ttl)
-- [Borehole sub-purpose](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-sub-purpose.ttl)
-- [Depth reference datum](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/depth-reference-datum.ttl) - To supercede Borehole Depth Datum. To use for any depth or elevation reference.
-- [Borehole design](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-design.ttl)
-- [Borhole origin circumstance](http://catalogue.linked.data.gov.au/index.php/resource/51)
-- [Borehole drilling method](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-drilling-method.ttl)
-- [Borehole Status and Site Status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/site-status.ttl) _collections_ of borehole and minocc
-- [Borehole status event](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/borehole-status-event.ttl)
-- [Resource Project Lifecycle and Borehole Class](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/resource-project-lifecycle.ttl)
-- [Organisation Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-roles.ttl)
-- [Geometry Roles](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/geometry-roles.ttl)
-- [QLD Coordinate Reference Systems](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-crs.ttl)
-- [QLD UTM Zones](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qld-utm-zones.ttl)
-- [Survey type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/survey-type.ttl)
-- [Survey method](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/survey-method.ttl)_note:use "svymh:seismic-methods a skos:Collection ;" where survey_type==seismic
-- [Survey status](http://linked.data.gov.au/def/mining-survey-status)
-- Survey detail type -  _Need clarification_
-- [Sample type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-type.ttl) _need to reconcile with [Sample Type](https://vocabs.ands.org.au/viewById/185)_
-- [Sample method](http://linked.data.gov.au/def/sampling-method)
-- [IGSN code](https://vocabs.ands.org.au/viewById/188)
-- [Sample material type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-material.ttl)
-- [Sample relationship type](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-relationship.ttl)
-- [Sample facility](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/gsq-sample-facility.ttl) -  (Zillmere or Mt Isa)
-- [Sample location status](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/sample-location-status.ttl)
-- Sample detail type -  _Need clarification_
-- [Sample location detail type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-location-details.ttl)
-- [Observation type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/observation-type.ttl)
-- [Sample preparation](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/sample-preparation.ttl)
-- Observation detail type -  _Need clarification_
-- [Result type](https://github.com/geological-survey-of-queensland/vocabularies/raw/master/vocabularies/result-type.ttl)
-- [Unit of measure](https://raw.githubusercontent.com/geological-survey-of-queensland/vocabularies/master/vocabularies/qudt-uom.ttl)
-- [Data Access Rights](http://linked.data.gov.au/def/data-access-rights)
-
-### Reference vocabs that may be used or harvested
-- [Sample type](https://vocabs.ands.org.au/viewById/185)  
-- [Observation Method](https://vocabs.ands.org.au/viewById/89)
-- [Exploration Result](https://vocabs.ands.org.au/viewById/77)
-- [Sampling Method](https://vocabs.ands.org.au/viewById/195)
-- [Exploration Activity Type](https://vocabs.ands.org.au/viewById/79)
-- [Analysis](https://vocabs.ands.org.au/viewById/189)
-- [Instruments/Sensors](https://vocabs.ands.org.au/viewById/241)
-- [NEII Observation Method](https://vocabs.ands.org.au/viewById/167
-
 ## Reference Mapping of Legacy Systems into GeoProperties Database
 ### Mapping to MERLIN tables
 | Data Concept | MERLIN table | Comments |
