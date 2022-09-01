@@ -54,7 +54,7 @@ A Site is an entity or location within, wholly encompassing, or intersecting an 
 * See the [GSQ Site Profile](https://github.com/geological-survey-of-queensland/gsq-site-profile)
 
 #### Survey
-A Survey is a one-off time-bound event examining a Geological or Administrative Feature and describes the type of exploration, assessment, or processing work that produces Samples or Observations.. It involves a group of activities, such as Sampling and Observations, that occur together and have a defined realtionship, typically being conducted on a Site. For example, a resource company may decide to conduct three different surveys – geophysical, geochemical, and petrophysical – on a tenure they hold. 
+A Survey is a singular time-bound event examining a Geological or Administrative Feature and describes the type of exploration, assessment, or processing work that produces Samples or Observations. It involves a group of activities, such as Sampling and Observations, that occur together and have a defined relationship, typically being conducted on a Site. For example, a resource company may decide to conduct three different surveys – geophysical, geochemical, and petrophysical – on a tenure they hold. 
 
 * See [Exploration Work Types](https://github.com/geological-survey-of-queensland/ssor-database/blob/master/Exploration%20work%20type.md)
 * See [GSQ Survey Profile](https://github.com/geological-survey-of-queensland/gsq-survey-profile)
