@@ -21,7 +21,7 @@ GeoProps streamlined several disparate legacy databases within the Queensland Go
 Figure 1: High-level Geological Properties data model (Full model in Figure 2 below)</p>
 
 ### A plain English definition
-We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the Feature at a 'Site'. The Site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the Results to understand the **geological properties** of the Feature.
+We seek to understand the geological properties of a geological or administrative 'Feature'. We undertake a 'Survey' on the Feature at a 'Site'. The Site may comprise the whole Feature, part of the Feature, or may encompass and extend beyond the Feature. The Survey yields 'Samples' that may be physical, such as a drillcore, or non-physical proxies such as photographs. We conduct 'Observations' on the Samples or directly at the site using various procedures. The Observation yields 'Results' as measured values or qualitative descriptions. We interpret the set of amalgamated Results to understand the **geological properties** of the Feature.
 
 The table below demonstrates how these database elements may relate to each other for different data types (Borehole, Geophysics, Geochemistry) with example information. 
 
@@ -33,6 +33,8 @@ The table below demonstrates how these database elements may relate to each othe
 |**Sample**|LAS File:<br>Fair Gully 1 MAINLOG.las*|Gravity Intensity Grid:<br>GSQ2020-A1 GravAn.gri*<br>Sub-Sample: Pixel (25736,4646)|Handsample:<br>HS035<br>-(processing: crush, split, seive)-><br>Sub-Sample: HS035-A1C-S80|
 |**Observation**|Density Log (490mMD)|Gravity Intensity|XRF uranium reading |
 |**Result**|1.62 g/cc|9791197.22 ums-2|142ppm(U)|
+
+Note: While each observation and result can be recorded, in many cases the practical application will typically see a truncated record. For example all results in a wireline log _can_ be recorded, but in practice the LAS file is likely to be linked as an associated file to the site and analysed in standard software for the interpretation of las files. The array data contained therein has more utility in specialised software packages than in a database.
 
 ### Definitions
 #### Geological Property
@@ -77,7 +79,7 @@ An Observation is an act of carrying out a measurment using a _procedure_ to est
 * See [sosa:Observation](https://www.w3.org/TR/vocab-ssn/#SOSAObservation)
 
 ##### Survey vs Observation - what's the difference?
-For clarity, a 'Survey' is a singlular activity that may contain one or many 'Observations'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observations and radiometric observations.
+For clarity, a 'Survey' is a singular activity that may be comprised of one or many actions, i.e. 'Observations' and 'Samplings'. Essentially, a Survey is a collection of observations, or an [_Observation Collection_](https://www.w3.org/TR/vocab-ssn-ext/#sosa:ObservationCollection). For example, a 'Geophysical Observation Collection' may contain both magnetic observations and radiometric observations.
 
 Further examples of Surveys and their potential Observations are shown below. 
 
