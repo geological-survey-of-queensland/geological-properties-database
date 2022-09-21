@@ -100,8 +100,12 @@ A Result is a description or a value, including a unit of measure, of an Observa
 
 ## Geological Properties Database Conceptual Data Model
 <p align="center">
-<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/geological-properties-conceptual-ERD.png"><br>
+<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/Geoproperties_ERD_v1.1.png"><br>
 Figure 2: Geological Properties Conceptual Model</p>
+
+<p align="center">
+<img src="https://github.com/geological-survey-of-queensland/ssor-database/blob/master/images/Geoproperties_ERD_v1.1-Ancillary Tables (Spatial, Docs, Party).png"><br>
+Figure 2a: Geological Properties Ancillary Tables</p>
 
 ## Geological Property data elements
 |Data Element|Remarks|Source|
